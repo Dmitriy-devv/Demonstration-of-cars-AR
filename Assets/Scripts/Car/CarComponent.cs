@@ -11,11 +11,14 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
 
     private ComponentSign _signPrefab;
     private ComponentSign _currentSign;
+    private ComponentLine _linePrefab;
+    private ComponentLine _currentLine;
 
-    public void Init(ComponentSign sign)
+    public void Init(ComponentSign sign, ComponentLine line)
     {
         _signPrefab = sign;
         _signPosition = GetComponentInChildren<SignPosition>().transform;
+        _linePrefab = line;
         var collider = GetComponent<ComponentCollider>();
         collider.Click += OnClick;
         collider.Hold += OnHold;
@@ -25,9 +28,9 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
     {
         if (!value)
         {
-            if (_currentSign == null) return;
+            if (_currentSign != null) Destroy(_currentSign.gameObject);
+            if (_currentLine != null) Destroy(_currentLine.gameObject);
 
-            Destroy(_currentSign.gameObject);
             return;
         }
 
@@ -35,6 +38,9 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
         _currentSign.Init(raycaster.transform, this);
         _currentSign.Click += OnClick;
         _currentSign.Hold += OnHold;
+
+        _currentLine = Instantiate(_linePrefab);
+        _currentLine.Init(transform, _currentSign.transform);
     }
 
     private void OnHold()
@@ -49,8 +55,7 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
 
     private void OnDestroy()
     {
-        if (_currentSign == null) return;
-
-        Destroy(_currentSign.gameObject);
+        if (_currentSign != null) Destroy(_currentSign.gameObject);
+        if (_currentLine != null) Destroy(_currentLine.gameObject);
     }
 }
