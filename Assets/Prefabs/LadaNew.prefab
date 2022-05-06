@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136395537904666625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3915254e-10, y: 1.25, z: 1.25}
+  m_LocalPosition: {x: -1.2732926e-11, y: 2.59, z: -0.3800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2005922221648275314}
@@ -405,7 +405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779287106309485578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.061616e-16, y: 2.5, z: -3.061618e-16}
+  m_LocalPosition: {x: -2.7830507e-10, y: 2.5, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6352322561687486891}
@@ -1108,7 +1108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5206057221695852085}
   - component: {fileID: 1956835041105486579}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: BlockCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1770,7 +1770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2871297448487596988}
   m_LocalRotation: {x: -0, y: -0, z: -1.3125115e-24, w: 1}
-  m_LocalPosition: {x: 0, y: 2.3698602, z: 0}
+  m_LocalPosition: {x: 0, y: 2.37, z: -2.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8646525519660096657}
@@ -4630,7 +4630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7631027162598086959}
   m_LocalRotation: {x: -0, y: -0, z: -1.3125115e-24, w: 1}
-  m_LocalPosition: {x: 0, y: 2.4999726, z: 0}
+  m_LocalPosition: {x: 0.00000007946619, y: 2.4999726, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1919825545142262922}
@@ -4867,7 +4867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8640832823189849616}
   m_LocalRotation: {x: -0, y: -0, z: -1.3125115e-24, w: 1}
-  m_LocalPosition: {x: 0, y: 2.369855, z: 0}
+  m_LocalPosition: {x: -0, y: 2.37, z: -2.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7377265128714744025}

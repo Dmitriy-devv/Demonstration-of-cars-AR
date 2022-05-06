@@ -40,7 +40,7 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
         _currentSign.Hold += OnHold;
 
         _currentLine = Instantiate(_linePrefab);
-        _currentLine.Init(transform, _currentSign.transform);
+        _currentLine.Init(transform, _currentSign);
     }
 
     private void OnHold()

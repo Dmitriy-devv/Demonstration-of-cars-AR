@@ -15,9 +15,11 @@ public class ComponentSign : MonoBehaviour
 
     private ICarComponent _carComponent;
     private Transform _lookTarget;
+    private Collider _collider;
 
     public void Init(Transform lookTarget, ICarComponent carComponent)
     {
+        _collider = GetComponent<Collider>();
         _lookTarget = lookTarget;
         _carComponent = carComponent;
         var info = _carComponent.Info;
@@ -39,5 +41,10 @@ public class ComponentSign : MonoBehaviour
     private void OnMouseDown()
     {
         Click?.Invoke();
+    }
+
+    public Vector3 GetLinePosition()
+    {
+        return _collider.bounds.center - (_collider.bounds.extents.y * transform.up - _collider.bounds.extents.y * transform.up * 0.1f);
     }
 }

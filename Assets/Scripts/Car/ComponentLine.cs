@@ -4,27 +4,45 @@ using UnityEngine;
 
 public class ComponentLine : MonoBehaviour
 {
-    private Transform _componentTransform;
-    private Transform _signTransform;
+    [SerializeField] private int _countPoints;
 
-    private bool _isInit = false;
+    private Transform _componentTransform;
+    private ComponentSign _sign;
+
     private LineRenderer _lineRenderer;
 
-    public void Init(Transform component, Transform sign)
+    public void Init(Transform component, ComponentSign sign)
     {
         _componentTransform = component;
-        _signTransform = sign;
+        _sign= sign;
 
         _lineRenderer = GetComponent<LineRenderer>();
-
-        _isInit = true;
+        _lineRenderer.positionCount = _countPoints;
+        UpdateLine();
     }
 
-    private void Update()
+    public void UpdateLine()
     {
-        if (!_isInit) return;
+        var positions = new Vector3[_countPoints];
+        var signPos = _sign.GetLinePosition();
+        var componetPos = _componentTransform.position;
+        var deltaX = (signPos.x - componetPos.x);
+        var deltaY = (signPos.y - componetPos.y);
+        var deltaZ = (signPos.z - componetPos.z);
+        for (int i = 0; i < _countPoints - 1; i++)
+        {
+            var value = (float)i / (_countPoints - 1);
+            var func = value * value * value * value * value;
+            var x = componetPos.x + value * deltaX;
+            var y = componetPos.y + func * deltaY;
+            var z = componetPos.z + value * deltaZ;
+            positions[i] = new Vector3(x, y, z);
+        }
 
-        var positions  = new Vector3[] { _componentTransform.position, _signTransform.position};
+        positions[_countPoints - 1] = signPos;
+
         _lineRenderer.SetPositions(positions);
     }
+
+
 }
