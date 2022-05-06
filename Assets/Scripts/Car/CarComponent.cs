@@ -6,6 +6,7 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
 {
     public ComponentInfo Info => _info;
 
+    [SerializeField] private Transform _signPosition;
     [SerializeField] private ComponentInfo _info;
 
     private ComponentSign _signPrefab;
@@ -14,6 +15,7 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
     public void Init(ComponentSign sign)
     {
         _signPrefab = sign;
+        _signPosition = GetComponentInChildren<SignPosition>().transform;
         var collider = GetComponent<ComponentCollider>();
         collider.Click += OnClick;
         collider.Hold += OnHold;
@@ -29,8 +31,7 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
             return;
         }
 
-        var position = transform.position + Vector3.up;
-        _currentSign = Instantiate(_signPrefab, position, Quaternion.identity);
+        _currentSign = Instantiate(_signPrefab, _signPosition.position, Quaternion.identity, _signPosition.transform);
         _currentSign.Init(raycaster.transform, this);
         _currentSign.Click += OnClick;
         _currentSign.Hold += OnHold;

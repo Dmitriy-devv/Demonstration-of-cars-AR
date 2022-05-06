@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraRaycaster : MonoBehaviour
 {
     [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private LayerMask _layerMaskRaycast;
     [SerializeField] private float _distance;
 
     private IRaycastable _raycastable;
@@ -18,7 +19,7 @@ public class CameraRaycaster : MonoBehaviour
     private void Update()
     {
         Debug.DrawRay(transform.position, transform.forward * _distance, Color.black);
-        if (!Physics.Raycast(transform.position, transform.forward, out var info, _distance, _layerMask))
+        if (!Physics.Raycast(transform.position, transform.forward, out var info, _distance, _layerMaskRaycast))
         {
             if (_raycastable != null) _raycastable.RaycastTriger(false);
             _raycastable = null;
