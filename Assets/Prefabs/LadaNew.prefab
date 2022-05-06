@@ -98,6 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u041A\u0430\u043F\u043E\u0442"
+    Description: "\u041A\u0430\u043F\u043E\u0442\u0438\u043A)"
+    ActionText: Click to open/close
 --- !u!65 &6448743556160731184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -222,6 +226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0424\u0430\u0440\u0430"
+    Description: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
+    ActionText: Click to light on/off
 --- !u!1 &1359538139428731050
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: Wheel
+    Description: This is wheel lol
+    ActionText: Hold to rotate
 --- !u!1 &1659458138824546283
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +456,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: Wheel
+    Description: This is wheel lol
+    ActionText: Hold to rotate
 --- !u!1 &2003724215591822137
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +559,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0414\u0432\u0435\u0440\u044C"
+    Description: "\u0414\u0432\u0435\u0440\u044C \u0437\u0430\u0434\u043D\u044F\u044F
+      \u043B\u0435\u0432\u0430\u044F"
+    ActionText: 
 --- !u!65 &2845831899989635161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -666,6 +687,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0424\u0430\u0440\u0430"
+    Description: "\u0417\u0430\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
+    ActionText: Click to light on/off
 --- !u!1 &2193641949780637296
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,6 +802,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0424\u0430\u0440\u0430"
+    Description: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
+    ActionText: Click to light on/off
 --- !u!1 &2265710714401051169
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +997,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: 
+    Description: 
+    ActionText: 
 --- !u!1 &2573541054452413614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0414\u0432\u0435\u0440\u044C"
+    Description: "\u0414\u0432\u0435\u0440\u044C \u0437\u0430\u0434\u043D\u044F\u044F
+      \u043F\u0440\u0430\u0432\u0430\u044F"
+    ActionText: 
 --- !u!65 &5054027507475474968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1261,6 +1299,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0414\u0432\u0435\u0440\u044C"
+    Description: "\u0414\u0432\u0435\u0440\u044C \u043F\u0435\u0440\u0435\u0434\u043D\u044F\u044F
+      \u043B\u0435\u0432\u0430\u044F"
+    ActionText: 
 --- !u!65 &3154292233816093277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1385,6 +1428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: 
+    Description: 
+    ActionText: 
 --- !u!1 &3629635168910598749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,6 +1786,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: Wheel
+    Description: This is wheel lol
+    ActionText: Hold to rotate
 --- !u!1 &4842291445465323004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,6 +2662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: 
+    Description: 
+    ActionText: 
 --- !u!1 &5476599979698437805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,6 +2938,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: 
+    Description: 
+    ActionText: 
 --- !u!1 &5971017112865453390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,6 +3042,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0414\u0432\u0435\u0440\u044C"
+    Description: "\u0414\u0432\u0435\u0440\u044C \u043F\u0435\u0440\u0435\u0434\u043D\u044F\u044F
+      \u043B\u0435\u0432\u0430\u044F"
+    ActionText: 
 --- !u!65 &405195717036159727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3370,6 +3434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: Wheel
+    Description: This is wheel lol
+    ActionText: Hold to rotate
 --- !u!1 &7327714046288366555
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,6 +3629,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0424\u0430\u0440\u0430"
+    Description: "\u0417\u0430\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
+    ActionText: Click to light on/off
 --- !u!1 &8299052389553917004
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,6 +3959,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: 
+    Description: 
+    ActionText: 
 --- !u!1 &9009668193405128704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,6 +4235,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _info:
+    Name: 
+    Description: 
+    ActionText: 
 --- !u!1 &9114059658990196728
 GameObject:
   m_ObjectHideFlags: 0

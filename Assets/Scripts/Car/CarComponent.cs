@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarComponent : MonoBehaviour, IRaycastable
+public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
 {
-    private ComponentSign _signPrefab;
+    public ComponentInfo Info => _info;
 
-    private GameObject _signObj;
+    [SerializeField] private ComponentInfo _info;
+
+    private ComponentSign _signPrefab;
+    private ComponentSign _currentSign;
+
 
     public void Init(ComponentSign sign)
     {
@@ -17,15 +21,26 @@ public class CarComponent : MonoBehaviour, IRaycastable
     {
         if (!value)
         {
-            if (_signObj == null) return;
+            if (_currentSign == null) return;
 
-            Destroy(_signObj);
+            Destroy(_currentSign.gameObject);
             return;
         }
 
         var position = transform.position + Vector3.up;
-        var sign = Instantiate(_signPrefab, position, Quaternion.identity);
-        sign.Init(raycaster.transform);
-        _signObj = sign.gameObject;
+        _currentSign = Instantiate(_signPrefab, position, Quaternion.identity);
+        _currentSign.Init(raycaster.transform, this);
+        _currentSign.Click += OnUIClick;
+        _currentSign.Hold += OnUIHold;
+    }
+
+    private void OnUIHold()
+    {
+        Debug.Log($"{name} holded by UI");
+    }
+
+    private void OnUIClick()
+    {
+        Debug.Log($"{name} clicked by UI");
     }
 }
