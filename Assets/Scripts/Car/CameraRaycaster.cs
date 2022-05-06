@@ -17,7 +17,7 @@ public class CameraRaycaster : MonoBehaviour
             _raycastable = null;
             return;
         }
-
+        Debug.Log(info.collider.gameObject.name);
         if (!info.collider.gameObject.TryGetComponent<IRaycastable>(out var raycastable))
         {
             _raycastable = null;
