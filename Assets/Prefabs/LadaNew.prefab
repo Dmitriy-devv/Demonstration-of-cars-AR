@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2005922221648275314}
   - component: {fileID: 7577754293600379762}
   - component: {fileID: 6723972508129576647}
+  - component: {fileID: 8686383612892936016}
+  - component: {fileID: 6448743556160731184}
   m_Layer: 0
   m_Name: Kapot
   m_TagString: Untagged
@@ -84,6 +86,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8686383612892936016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199708484109545833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6448743556160731184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199708484109545833}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.45531, y: 0.6332965, z: 3.9006007}
+  m_Center: {x: 0.0025537014, y: -0.020077944, z: 0.11164844}
 --- !u!1 &419160277274100609
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +372,7 @@ GameObject:
   - component: {fileID: 6640418634960687109}
   - component: {fileID: 6956602669155778514}
   - component: {fileID: 6806567643065890562}
+  - component: {fileID: 7875402405850385913}
   m_Layer: 0
   m_Name: Left Back Door
   m_TagString: Untagged
@@ -419,6 +447,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7875402405850385913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003724215591822137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2009832339989281079
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +800,7 @@ GameObject:
   - component: {fileID: 8712685631079860263}
   - component: {fileID: 5771891684204287376}
   - component: {fileID: 7181721827147273353}
+  - component: {fileID: 3481009630660219877}
   m_Layer: 0
   m_Name: Right Back Door
   m_TagString: Untagged
@@ -834,6 +875,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3481009630660219877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2573541054452413614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2743394612399380275
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +979,7 @@ GameObject:
   - component: {fileID: 587834776963949195}
   - component: {fileID: 6720018857547535123}
   - component: {fileID: 5328757467200679242}
+  - component: {fileID: 6665883571709226685}
   m_Layer: 0
   m_Name: Left Front Door
   m_TagString: Untagged
@@ -1001,6 +1055,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6665883571709226685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926482433036111440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3297241930118432080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,6 +2574,7 @@ GameObject:
   - component: {fileID: 5474552113971548411}
   - component: {fileID: 5185870108057257911}
   - component: {fileID: 1335077037565952137}
+  - component: {fileID: 876986282758495134}
   m_Layer: 0
   m_Name: Right Front Door
   m_TagString: Untagged
@@ -2583,6 +2650,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &876986282758495134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5971017112865453390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6350423208596147941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,7 +3182,7 @@ GameObject:
   - component: {fileID: 3956845410187831391}
   - component: {fileID: 951852253877092764}
   - component: {fileID: 4443794218571735724}
-  - component: {fileID: 8299052389553917007}
+  - component: {fileID: 2790553894060853942}
   m_Layer: 2
   m_Name: Main
   m_TagString: Untagged
@@ -3186,7 +3265,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8299052389553917007
+--- !u!65 &2790553894060853942
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3197,8 +3276,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.4664016, y: 3.32, z: 15.967393}
-  m_Center: {x: 0.029138565, y: 0.573681, z: -1.6733279}
+  m_Size: {x: 6.4664016, y: 4.58, z: 15.967393}
+  m_Center: {x: 0.029138565, y: 1.25, z: -1.6733279}
 --- !u!1 &8677068375656394055
 GameObject:
   m_ObjectHideFlags: 0
