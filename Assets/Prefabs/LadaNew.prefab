@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6723972508129576647}
   - component: {fileID: 8686383612892936016}
   - component: {fileID: 6448743556160731184}
+  - component: {fileID: 3203983665631934470}
+  - component: {fileID: 1484883134519663646}
   m_Layer: 0
   m_Name: Kapot
   m_TagString: Untagged
@@ -115,6 +117,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.45531, y: 0.6332965, z: 3.42}
   m_Center: {x: 0.0025537014, y: -0.020077944, z: 0.11164844}
+--- !u!114 &3203983665631934470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199708484109545833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1484883134519663646
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199708484109545833}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &419160277274100609
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +158,8 @@ GameObject:
   - component: {fileID: 8267503014195925314}
   - component: {fileID: 5813289717795526458}
   - component: {fileID: 3164424462968871811}
+  - component: {fileID: 3796123727704399296}
+  - component: {fileID: 3548782607020743275}
   m_Layer: 0
   m_Name: Left Front Light
   m_TagString: Untagged
@@ -230,6 +262,34 @@ MonoBehaviour:
     Name: "\u0424\u0430\u0440\u0430"
     Description: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
     ActionText: Click to light on/off
+--- !u!114 &3796123727704399296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419160277274100609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &3548782607020743275
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419160277274100609}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1359538139428731050
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +303,8 @@ GameObject:
   - component: {fileID: 5525408692804037749}
   - component: {fileID: 6428253459579073968}
   - component: {fileID: 2560695239754907035}
+  - component: {fileID: 3752909115610052507}
+  - component: {fileID: 4738381062243154297}
   m_Layer: 0
   m_Name: Right Back Wheel
   m_TagString: Untagged
@@ -345,6 +407,34 @@ MonoBehaviour:
     Name: Wheel
     Description: This is wheel lol
     ActionText: Hold to rotate
+--- !u!114 &3752909115610052507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359538139428731050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &4738381062243154297
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359538139428731050}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1659458138824546283
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +448,8 @@ GameObject:
   - component: {fileID: 8119598122182664729}
   - component: {fileID: 7717639280148698324}
   - component: {fileID: 9053711305549497238}
+  - component: {fileID: 4954066112142008899}
+  - component: {fileID: 4836099349359446464}
   m_Layer: 0
   m_Name: Right Front Wheel
   m_TagString: Untagged
@@ -460,6 +552,34 @@ MonoBehaviour:
     Name: Wheel
     Description: This is wheel lol
     ActionText: Hold to rotate
+--- !u!114 &4954066112142008899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659458138824546283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &4836099349359446464
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659458138824546283}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2003724215591822137
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +593,8 @@ GameObject:
   - component: {fileID: 6806567643065890562}
   - component: {fileID: 7875402405850385913}
   - component: {fileID: 2845831899989635161}
+  - component: {fileID: 4455224385007312552}
+  - component: {fileID: 2756886834054455347}
   m_Layer: 0
   m_Name: Left Back Door
   m_TagString: Untagged
@@ -577,6 +699,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 3.7028472, z: 3.23}
   m_Center: {x: 0.016482249, y: 0.37470138, z: 0.3104682}
+--- !u!114 &4455224385007312552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003724215591822137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &2756886834054455347
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003724215591822137}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2009832339989281079
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +740,8 @@ GameObject:
   - component: {fileID: 221649294967698600}
   - component: {fileID: 4926122289689795629}
   - component: {fileID: 6102773922225240912}
+  - component: {fileID: 1452337461047034208}
+  - component: {fileID: 4409429028794744008}
   m_Layer: 0
   m_Name: Right Back Light
   m_TagString: Untagged
@@ -691,6 +843,34 @@ MonoBehaviour:
     Name: "\u0424\u0430\u0440\u0430"
     Description: "\u0417\u0430\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
     ActionText: Click to light on/off
+--- !u!114 &1452337461047034208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009832339989281079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &4409429028794744008
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009832339989281079}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2193641949780637296
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +884,8 @@ GameObject:
   - component: {fileID: 5342777361793137753}
   - component: {fileID: 4888717492249078347}
   - component: {fileID: 641677864130129476}
+  - component: {fileID: 3736318944969143592}
+  - component: {fileID: 8755891986382475023}
   m_Layer: 0
   m_Name: Right Front Light
   m_TagString: Untagged
@@ -806,6 +988,34 @@ MonoBehaviour:
     Name: "\u0424\u0430\u0440\u0430"
     Description: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
     ActionText: Click to light on/off
+--- !u!114 &3736318944969143592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193641949780637296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &8755891986382475023
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193641949780637296}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2265710714401051169
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +1110,8 @@ GameObject:
   - component: {fileID: 5898872581241007504}
   - component: {fileID: 3844597160668686210}
   - component: {fileID: 7462005574674779427}
+  - component: {fileID: 7184318963069211371}
+  - component: {fileID: 7627768781705652441}
   m_Layer: 0
   m_Name: Bochok4
   m_TagString: Untagged
@@ -1001,6 +1213,34 @@ MonoBehaviour:
     Name: 
     Description: 
     ActionText: 
+--- !u!54 &7184318963069211371
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315039914640544554}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7627768781705652441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315039914640544554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2573541054452413614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1254,8 @@ GameObject:
   - component: {fileID: 7181721827147273353}
   - component: {fileID: 3481009630660219877}
   - component: {fileID: 5054027507475474968}
+  - component: {fileID: 6756375847449074823}
+  - component: {fileID: 6311889487189471539}
   m_Layer: 0
   m_Name: Right Back Door
   m_TagString: Untagged
@@ -1118,6 +1360,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 3.702847, z: 3.23}
   m_Center: {x: -0.018091798, y: 0.3747012, z: 0.31046832}
+--- !u!114 &6756375847449074823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2573541054452413614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &6311889487189471539
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2573541054452413614}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2743394612399380275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1482,8 @@ GameObject:
   - component: {fileID: 5328757467200679242}
   - component: {fileID: 6665883571709226685}
   - component: {fileID: 3154292233816093277}
+  - component: {fileID: 460317160466303273}
+  - component: {fileID: 7804182230351268366}
   m_Layer: 0
   m_Name: Left Front Door
   m_TagString: Untagged
@@ -1317,6 +1589,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 3.770039, z: 3.34}
   m_Center: {x: -0.055080146, y: 0.45145756, z: 0.55319643}
+--- !u!114 &460317160466303273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926482433036111440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &7804182230351268366
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926482433036111440}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3297241930118432080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1630,8 @@ GameObject:
   - component: {fileID: 3581991668294045431}
   - component: {fileID: 1997806782427391128}
   - component: {fileID: 165497757266885236}
+  - component: {fileID: 7200693283373429747}
+  - component: {fileID: 6696268536453735053}
   m_Layer: 0
   m_Name: Akkum
   m_TagString: Untagged
@@ -1432,6 +1734,34 @@ MonoBehaviour:
     Name: 
     Description: 
     ActionText: 
+--- !u!54 &7200693283373429747
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297241930118432080}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6696268536453735053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297241930118432080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3629635168910598749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +2018,8 @@ GameObject:
   - component: {fileID: 6020712992760917779}
   - component: {fileID: 3534722161785388718}
   - component: {fileID: 7088222793441276355}
+  - component: {fileID: 4659614089804183370}
+  - component: {fileID: 325133240955529006}
   m_Layer: 0
   m_Name: Left Back Wheel
   m_TagString: Untagged
@@ -1790,6 +2122,34 @@ MonoBehaviour:
     Name: Wheel
     Description: This is wheel lol
     ActionText: Hold to rotate
+--- !u!114 &4659614089804183370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4546985785529496150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &325133240955529006
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4546985785529496150}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4842291445465323004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,6 +2925,8 @@ GameObject:
   - component: {fileID: 3775801140222174143}
   - component: {fileID: 8767652047003171437}
   - component: {fileID: 6132862800592034082}
+  - component: {fileID: 9179905158405549878}
+  - component: {fileID: 4301640373548352267}
   m_Layer: 0
   m_Name: Bochok1
   m_TagString: Untagged
@@ -2666,6 +3028,34 @@ MonoBehaviour:
     Name: 
     Description: 
     ActionText: 
+--- !u!54 &9179905158405549878
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071460111329745690}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &4301640373548352267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071460111329745690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5476599979698437805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,6 +3231,8 @@ GameObject:
   - component: {fileID: 1695999207985985475}
   - component: {fileID: 4153376462845715947}
   - component: {fileID: 1176141574891708771}
+  - component: {fileID: 2735669166372208634}
+  - component: {fileID: 4858383666519852958}
   m_Layer: 0
   m_Name: Bochok2
   m_TagString: Untagged
@@ -2942,6 +3334,34 @@ MonoBehaviour:
     Name: 
     Description: 
     ActionText: 
+--- !u!54 &2735669166372208634
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5715877980012775848}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &4858383666519852958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5715877980012775848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5971017112865453390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,6 +3375,8 @@ GameObject:
   - component: {fileID: 1335077037565952137}
   - component: {fileID: 876986282758495134}
   - component: {fileID: 405195717036159727}
+  - component: {fileID: 5315713505284061268}
+  - component: {fileID: 7318927052573666150}
   m_Layer: 0
   m_Name: Right Front Door
   m_TagString: Untagged
@@ -3060,6 +3482,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 3.7700396, z: 3.34}
   m_Center: {x: 0.06156349, y: 0.45447618, z: 0.55753773}
+--- !u!114 &5315713505284061268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5971017112865453390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &7318927052573666150
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5971017112865453390}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6350423208596147941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,6 +3786,8 @@ GameObject:
   - component: {fileID: 5894337572458608350}
   - component: {fileID: 8386261339504312526}
   - component: {fileID: 8582365960679112563}
+  - component: {fileID: 3455290377691418810}
+  - component: {fileID: 4245798720270688654}
   m_Layer: 0
   m_Name: Left Front Wheel
   m_TagString: Untagged
@@ -3438,6 +3890,34 @@ MonoBehaviour:
     Name: Wheel
     Description: This is wheel lol
     ActionText: Hold to rotate
+--- !u!114 &3455290377691418810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289029180849748375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &4245798720270688654
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289029180849748375}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7327714046288366555
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,6 +4012,8 @@ GameObject:
   - component: {fileID: 1884986780110946513}
   - component: {fileID: 7747537757340309767}
   - component: {fileID: 7420972251622098286}
+  - component: {fileID: 1931914319386946002}
+  - component: {fileID: 4252250630883135330}
   m_Layer: 0
   m_Name: Left Back Light
   m_TagString: Untagged
@@ -3633,6 +4115,34 @@ MonoBehaviour:
     Name: "\u0424\u0430\u0440\u0430"
     Description: "\u0417\u0430\u0434\u043D\u044F\u044F \u0444\u0430\u0440\u0430"
     ActionText: Click to light on/off
+--- !u!114 &1931914319386946002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7476066937222392742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &4252250630883135330
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7476066937222392742}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8299052389553917004
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +4423,8 @@ GameObject:
   - component: {fileID: 370580230247840272}
   - component: {fileID: 3983049224247030676}
   - component: {fileID: 540933196188297246}
+  - component: {fileID: 4980180858667721946}
+  - component: {fileID: 6348415755933581929}
   m_Layer: 0
   m_Name: Motor
   m_TagString: Untagged
@@ -3963,6 +4475,34 @@ MonoBehaviour:
     Name: 
     Description: 
     ActionText: 
+--- !u!54 &4980180858667721946
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748458503713651589}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6348415755933581929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748458503713651589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9009668193405128704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,6 +4678,8 @@ GameObject:
   - component: {fileID: 3902072239486297598}
   - component: {fileID: 3528985300977170383}
   - component: {fileID: 6856686194041529036}
+  - component: {fileID: 555098551319639215}
+  - component: {fileID: 1809028604127240605}
   m_Layer: 0
   m_Name: Bochok3
   m_TagString: Untagged
@@ -4239,6 +4781,34 @@ MonoBehaviour:
     Name: 
     Description: 
     ActionText: 
+--- !u!54 &555098551319639215
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9106517488197477349}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1809028604127240605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9106517488197477349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9114059658990196728
 GameObject:
   m_ObjectHideFlags: 0

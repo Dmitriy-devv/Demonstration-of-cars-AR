@@ -11,10 +11,12 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
     private ComponentSign _signPrefab;
     private ComponentSign _currentSign;
 
-
     public void Init(ComponentSign sign)
     {
         _signPrefab = sign;
+        var collider = GetComponent<ComponentCollider>();
+        collider.Click += OnClick;
+        collider.Hold += OnHold;
     }
 
     public void RaycastTriger(bool value, CameraRaycaster raycaster = null)
@@ -30,17 +32,24 @@ public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
         var position = transform.position + Vector3.up;
         _currentSign = Instantiate(_signPrefab, position, Quaternion.identity);
         _currentSign.Init(raycaster.transform, this);
-        _currentSign.Click += OnUIClick;
-        _currentSign.Hold += OnUIHold;
+        _currentSign.Click += OnClick;
+        _currentSign.Hold += OnHold;
     }
 
-    private void OnUIHold()
+    private void OnHold()
     {
         Debug.Log($"{name} holded by UI");
     }
 
-    private void OnUIClick()
+    private void OnClick()
     {
         Debug.Log($"{name} clicked by UI");
+    }
+
+    private void OnDestroy()
+    {
+        if (_currentSign == null) return;
+
+        Destroy(_currentSign.gameObject);
     }
 }

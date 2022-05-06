@@ -9,6 +9,12 @@ public class CameraRaycaster : MonoBehaviour
 
     private IRaycastable _raycastable;
 
+    private void Start()
+    {
+        var camera = GetComponent<Camera>();
+        camera.eventMask = _layerMask;
+    }
+
     private void Update()
     {
         Debug.DrawRay(transform.position, transform.forward * _distance, Color.black);
