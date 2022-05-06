@@ -14,19 +14,23 @@ public class CameraRaycaster : MonoBehaviour
         Debug.DrawRay(transform.position, transform.forward * _distance, Color.black);
         if (!Physics.Raycast(transform.position, transform.forward, out var info, _distance, _layerMask))
         {
+            if (_raycastable != null) _raycastable.RaycastTriger(false);
             _raycastable = null;
             return;
         }
-        Debug.Log(info.collider.gameObject.name);
+
         if (!info.collider.gameObject.TryGetComponent<IRaycastable>(out var raycastable))
         {
+            if(_raycastable != null) _raycastable.RaycastTriger(false);
             _raycastable = null;
             return;
         }
 
         if (_raycastable == raycastable) return;
+        if (_raycastable != null) _raycastable.RaycastTriger(false);
+
         _raycastable = raycastable;
 
-        _raycastable.RaycastTriger();
+        _raycastable.RaycastTriger(true, this);
     }
 }

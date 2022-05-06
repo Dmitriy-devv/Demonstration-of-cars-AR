@@ -7,11 +7,18 @@ namespace Cars
     public class CarTest : MonoBehaviour
     {
         [SerializeField] private VisualEffect _spawnEffect;
+        [SerializeField] private ComponentSign _sign;
 
         private CarAnimator _carAnimator;
 
         public void Init()
         {
+            var components = GetComponentsInChildren<CarComponent>();
+            foreach (var component in components)
+            {
+                component.Init(_sign);
+            }
+
             _carAnimator = GetComponent<CarAnimator>();
             _carAnimator.Spawned += OnSpawned;
             _carAnimator.Init();

@@ -3246,6 +3246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnEffect: {fileID: 3311464277091964083, guid: 741d71915584b474a99be2e9d5d1b77c, type: 3}
+  _sign: {fileID: 7799278687793800214, guid: 9b6316bacc73a014fae1c2d154a5b38a, type: 3}
 --- !u!114 &8221368854669230379
 MonoBehaviour:
   m_ObjectHideFlags: 0
