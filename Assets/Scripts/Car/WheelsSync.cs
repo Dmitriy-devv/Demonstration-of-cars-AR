@@ -1,37 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class WheelsSync : MonoBehaviour
+namespace Cars
 {
-    [SerializeField] private Transform _FRWheel;
-    [SerializeField] private Transform _FLWheel;
-    [SerializeField] private Transform _BRWheel;
-    [SerializeField] private Transform _BLWheel;
-
-    [SerializeField] private WheelCollider _FRWheelCollider;
-    [SerializeField] private WheelCollider _FLWheelCollider;
-    [SerializeField] private WheelCollider _BRWheelCollider;
-    [SerializeField] private WheelCollider _BLWheelCollider;
-
-    private void Start()
+    public class WheelsSync : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private float _brakeTorque = 1000f;
+        [SerializeField] private List<WheelSet> _wheels;
 
-    private void FixedUpdate()
-    {
-        SyncWheel(_FRWheelCollider, _FRWheel);
-        SyncWheel(_FLWheelCollider, _FLWheel);
-        SyncWheel(_BRWheelCollider, _BRWheel);
-        SyncWheel(_BLWheelCollider, _BLWheel);
-    }
+        private void FixedUpdate()
+        {
+            foreach (var wheel in _wheels)
+            {
+                SyncWheel(wheel);
+                wheel.Collider.brakeTorque = _brakeTorque;
+            }
+        }
 
-    private void SyncWheel(WheelCollider wheelCollider, Transform wheelTransform)
-    {
-        wheelCollider.GetWorldPose(out var position, out var rotation);
+        private void SyncWheel(WheelSet wheelSet)
+        {
+            wheelSet.Collider.GetWorldPose(out var position, out var rotation);
 
-        wheelTransform.position = position;
-        wheelTransform.rotation = rotation;
+            wheelSet.Transform.position = position;
+            wheelSet.Transform.rotation = rotation;
+        }
+
+        [Serializable]
+        private class WheelSet
+        {
+            public WheelCollider Collider;
+            public Transform Transform;
+        }
     }
 }
