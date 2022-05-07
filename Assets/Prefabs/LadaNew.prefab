@@ -520,7 +520,7 @@ Transform:
   m_Children:
   - {fileID: 7461938385603972613}
   m_Father: {fileID: 4842291445856007574}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &693911113383600772
 MeshFilter:
@@ -700,8 +700,8 @@ GameObject:
   - component: {fileID: 7743108183172782996}
   - component: {fileID: 8119598122182664729}
   - component: {fileID: 7717639280148698324}
-  - component: {fileID: 9053711305549497238}
   - component: {fileID: 4954066112142008899}
+  - component: {fileID: 4184471164097110885}
   m_Layer: 0
   m_Name: Right Front Wheel
   m_TagString: Untagged
@@ -789,22 +789,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6090099791556603121, guid: 83904f062bf34f549bf99ef7efc53133, type: 3}
---- !u!114 &9053711305549497238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659458138824546283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _info:
-    Name: Wheel
-    Description: This is wheel lol
-    ActionText: Hold to rotate
 --- !u!114 &4954066112142008899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,6 +801,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4184471164097110885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659458138824546283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2b31dd637826c49b3c47ca84b64a5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info:
+    Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
+    Description: 
+    ActionText: "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439 \u0434\u043B\u044F
+      \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F"
+  _speedRotate: 30
+  _wheelCollider: {fileID: 4842291446989773857}
+  _otherWheel: {fileID: 824977567068010909}
+  _maxAngle: 30
 --- !u!1 &1930254196131131946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,8 +3042,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2139084478881566929}
-  - {fileID: 8841559050130657127}
   - {fileID: 5833149000667177705}
+  - {fileID: 8841559050130657127}
   - {fileID: 5593499780528581040}
   m_Father: {fileID: 4842291446620177449}
   m_RootOrder: 1
@@ -4686,8 +4691,8 @@ GameObject:
   - component: {fileID: 2174487280874977377}
   - component: {fileID: 5894337572458608350}
   - component: {fileID: 8386261339504312526}
-  - component: {fileID: 8582365960679112563}
   - component: {fileID: 3455290377691418810}
+  - component: {fileID: 824977567068010909}
   m_Layer: 0
   m_Name: Left Front Wheel
   m_TagString: Untagged
@@ -4708,7 +4713,7 @@ Transform:
   m_Children:
   - {fileID: 6012705027337129861}
   m_Father: {fileID: 4842291445856007574}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2174487280874977377
 MeshFilter:
@@ -4775,22 +4780,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5818838934507946819, guid: 83904f062bf34f549bf99ef7efc53133, type: 3}
---- !u!114 &8582365960679112563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7289029180849748375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc713f12114b7d459a26f65544ba8e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _info:
-    Name: Wheel
-    Description: This is wheel lol
-    ActionText: Hold to rotate
 --- !u!114 &3455290377691418810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4803,6 +4792,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &824977567068010909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289029180849748375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2b31dd637826c49b3c47ca84b64a5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info:
+    Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
+    Description: 
+    ActionText: "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439 \u0434\u043B\u044F
+      \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F"
+  _speedRotate: 30
+  _wheelCollider: {fileID: 4842291447294809849}
+  _otherWheel: {fileID: 4184471164097110885}
+  _maxAngle: 30
 --- !u!1 &7302127989744579247
 GameObject:
   m_ObjectHideFlags: 0
