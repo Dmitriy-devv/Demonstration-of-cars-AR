@@ -31,7 +31,7 @@ namespace Cars
             collider.Hold += OnHold;
         }
 
-        public virtual void RaycastTriger(bool value, CameraRaycaster raycaster = null)
+        public void RaycastTriger(bool value, CameraRaycaster raycaster = null)
         {
             if (!value)
             {
