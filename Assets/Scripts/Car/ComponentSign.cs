@@ -4,47 +4,50 @@ using UnityEngine;
 using System;
 using TMPro;
 
-public class ComponentSign : MonoBehaviour
+namespace Cars
 {
-    public event Action Hold;
-    public event Action Click;
-
-    [SerializeField] private TextMeshProUGUI _nameText;
-    [SerializeField] private TextMeshProUGUI _descriptionText;
-    [SerializeField] private TextMeshProUGUI _actionText;
-
-    private ICarComponent _carComponent;
-    private Transform _lookTarget;
-    private Collider _collider;
-
-    public void Init(Transform lookTarget, ICarComponent carComponent)
+    public class ComponentSign : MonoBehaviour
     {
-        _collider = GetComponent<Collider>();
-        _lookTarget = lookTarget;
-        _carComponent = carComponent;
-        var info = _carComponent.Info;
-        _nameText.text = info.Name;
-        _descriptionText.text = info.Description;
-        _actionText.text = info.ActionText;
-    }
+        public event Action Hold;
+        public event Action Click;
 
-    private void Update()
-    {
-        transform.LookAt(_lookTarget);
-    }
+        [SerializeField] private TextMeshProUGUI _nameText;
+        [SerializeField] private TextMeshProUGUI _descriptionText;
+        [SerializeField] private TextMeshProUGUI _actionText;
 
-    private void OnMouseDrag()
-    {
-        Hold?.Invoke();
-    }
+        private ICarComponent _carComponent;
+        private Transform _lookTarget;
+        private Collider _collider;
 
-    private void OnMouseDown()
-    {
-        Click?.Invoke();
-    }
+        public void Init(Transform lookTarget, ICarComponent carComponent)
+        {
+            _collider = GetComponent<Collider>();
+            _lookTarget = lookTarget;
+            _carComponent = carComponent;
+            var info = _carComponent.Info;
+            _nameText.text = info.Name;
+            _descriptionText.text = info.Description;
+            _actionText.text = info.ActionText;
+        }
 
-    public Vector3 GetLinePosition()
-    {
-        return _collider.bounds.center - (_collider.bounds.extents.y * transform.up - _collider.bounds.extents.y * transform.up * 0.1f);
+        private void Update()
+        {
+            transform.LookAt(_lookTarget);
+        }
+
+        private void OnMouseDrag()
+        {
+            Hold?.Invoke();
+        }
+
+        private void OnMouseDown()
+        {
+            Click?.Invoke();
+        }
+
+        public Vector3 GetLinePosition()
+        {
+            return _collider.bounds.center - (_collider.bounds.extents.y * transform.up - _collider.bounds.extents.y * transform.up * 0.1f);
+        }
     }
 }

@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[Serializable]
-public struct ComponentInfo
+namespace Cars
 {
-    public string Name;
-    public string Description;
-    public string ActionText;
+    [Serializable]
+    public struct ComponentInfo
+    {
+        public string Name;
+        public string Description;
+        public string ActionText;
+    }
 }

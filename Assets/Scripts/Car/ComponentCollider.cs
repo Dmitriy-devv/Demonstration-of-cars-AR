@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class ComponentCollider : MonoBehaviour
+namespace Cars
 {
-    public event Action Click;
-    public event Action Hold;
-
-    private void OnMouseDrag()
+    public class ComponentCollider : MonoBehaviour
     {
-        Hold?.Invoke();
-    }
+        public event Action Click;
+        public event Action Hold;
 
-    private void OnMouseDown()
-    {
-        Click?.Invoke();
+        private void OnMouseDrag()
+        {
+            Hold?.Invoke();
+        }
+
+        private void OnMouseDown()
+        {
+            Click?.Invoke();
+        }
     }
 }

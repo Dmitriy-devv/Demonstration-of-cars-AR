@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4815082eca4f7d4c82951763812b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _countPoints: 100
+  _countPoints: 50
 --- !u!120 &5421528803447300493
 LineRenderer:
   m_ObjectHideFlags: 0

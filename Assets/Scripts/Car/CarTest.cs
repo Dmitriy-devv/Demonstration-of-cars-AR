@@ -14,7 +14,7 @@ namespace Cars
 
         public void Init()
         {
-            var components = GetComponentsInChildren<CarComponent>();
+            var components = GetComponentsInChildren<CarComponent>(true);
             foreach (var component in components)
             {
                 component.Init(_sign, _line);
