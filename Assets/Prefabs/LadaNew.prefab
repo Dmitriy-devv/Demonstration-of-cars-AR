@@ -688,8 +688,10 @@ MonoBehaviour:
     ActionText: 
   _speed: 1
   _maxSpeed: 50
+  _force: 2
   _wheelCollider: {fileID: 4842291445522204772}
   _wheelTransform: {fileID: 5833149000667177705}
+  _forcePosition: {fileID: 1164330878983635841}
   _otherWheel: {fileID: 8666267466662435986}
   _particleSystem: {fileID: 8658622240296951631}
 --- !u!1 &1471918028491157670
@@ -1444,8 +1446,10 @@ MonoBehaviour:
     ActionText: 
   _speed: 1
   _maxSpeed: 50
+  _force: 2
   _wheelCollider: {fileID: 4842291447300953919}
   _wheelTransform: {fileID: 2139084478881566929}
+  _forcePosition: {fileID: 1164330878983635841}
   _otherWheel: {fileID: 8538961964953864528}
   _particleSystem: {fileID: 6545909769748340406}
 --- !u!1 &2133209170720021785
@@ -2031,6 +2035,36 @@ MonoBehaviour:
   _timeOpen: 0.3
   _force: 200
   _isInverseForceDirection: 0
+--- !u!1 &2712932551083595725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1164330878983635841}
+  m_Layer: 0
+  m_Name: CarForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1164330878983635841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2712932551083595725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.12, z: 7.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8050180833927602104}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2743394612399380275
 GameObject:
   m_ObjectHideFlags: 0
@@ -5231,6 +5265,7 @@ Transform:
   - {fileID: 4842291445538852300}
   - {fileID: 4842291447523947967}
   - {fileID: 4842291446620177449}
+  - {fileID: 1164330878983635841}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
