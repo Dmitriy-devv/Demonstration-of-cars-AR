@@ -8,6 +8,8 @@ namespace Cars
     [RequireComponent(typeof(AudioSource))]
     public class Accumulator : CarComponent
     {
+        [SerializeField] private VisualEffect _effect;
+
         private AudioSource _audioSource;
         private bool _state;
 

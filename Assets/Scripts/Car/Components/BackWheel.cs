@@ -12,6 +12,7 @@ namespace Cars
         [SerializeField] private WheelCollider _wheelCollider;
         [SerializeField] private Transform _wheelTransform;
         [SerializeField] private BackWheel _otherWheel;
+        [SerializeField] private ParticleSystem _particleSystem;
 
         private float _t;
 
@@ -33,6 +34,8 @@ namespace Cars
             transform.position = _wheelTransform.position;
             if (_currentLine != null) _currentLine.UpdateLine();
             _t = Mathf.Clamp(_t - Time.deltaTime * _speed, 0f, 1f);
+            var em = _particleSystem.emission;
+            em.rateOverTime = Mathf.Clamp(_wheelCollider.rpm - 1f, 0f, 500f) / 10f;
         }
 
         public void UpdateSpeed(float value)
