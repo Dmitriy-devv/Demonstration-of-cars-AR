@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 namespace Cars
 {
     public class CarTest : MonoBehaviour, ICar
     {
         public ComponentLine ComponentLine => _line;
-
         public ComponentSign ComponentSign => _sign;
+
 
         [SerializeField] private VisualEffect _spawnEffect;
         [SerializeField] private ComponentLine _line;
@@ -20,6 +21,7 @@ namespace Cars
         public void Init()
         {
             var components = GetComponentsInChildren<CarComponent>(true);
+            
             foreach (var component in components)
             {
                 component.Init(this);

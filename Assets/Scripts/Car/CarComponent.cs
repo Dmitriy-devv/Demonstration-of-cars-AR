@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Cars
 {
-    public class CarComponent : MonoBehaviour, IRaycastable, ICarComponent
+    public class CarComponent : MonoBehaviour, IRaycastable
     {
         public ComponentInfo Info => _info;
 

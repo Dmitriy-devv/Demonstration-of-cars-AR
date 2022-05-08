@@ -15,11 +15,11 @@ namespace Cars
         [SerializeField] private TextMeshProUGUI _descriptionText;
         [SerializeField] private TextMeshProUGUI _actionText;
 
-        private ICarComponent _carComponent;
+        private CarComponent _carComponent;
         private Transform _lookTarget;
         private Collider _collider;
 
-        public void Init(Transform lookTarget, ICarComponent carComponent)
+        public void Init(Transform lookTarget, CarComponent carComponent)
         {
             _collider = GetComponent<Collider>();
             _lookTarget = lookTarget;

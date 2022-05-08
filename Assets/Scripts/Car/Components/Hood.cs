@@ -7,7 +7,7 @@ namespace Cars
     public class Hood : CarComponent
     {
         [Header("Hood")]
-        [SerializeField] private GameObject _engineObj;
+        [SerializeField] private Engine _engine;
         [SerializeField] private Transform _openTransform;
         [SerializeField] private Transform _pivot;
         [SerializeField] private float _timeOpen;
@@ -59,7 +59,7 @@ namespace Cars
 
         private void SetEngine(bool value)
         {
-            _engineObj.SetActive(value);
+            _engine.EngineHood(value);
         }
     }
 }

@@ -8,9 +8,6 @@ namespace Cars
     [RequireComponent(typeof(AudioSource))]
     public class Accumulator : CarComponent
     {
-        public event Action<bool> Changed;
-        public bool State => _state;
-
         private AudioSource _audioSource;
         private bool _state;
 

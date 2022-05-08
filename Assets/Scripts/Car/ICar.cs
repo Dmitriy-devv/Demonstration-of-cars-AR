@@ -8,6 +8,7 @@ namespace Cars
     {
         public ComponentLine ComponentLine { get; }
         public ComponentSign ComponentSign { get; }
+
         public void AddForce(Vector3 direction, Vector3 position, float force);
         
     }
