@@ -456,6 +456,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ada6c8b6009e514bb8e3a08e42204a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1096887647318015050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7460044585335543596}
+  m_Layer: 0
+  m_Name: EffectPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7460044585335543596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096887647318015050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.219, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541948639248316388}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1244904979991896703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,8 +2347,9 @@ GameObject:
   - component: {fileID: 3581991668294045431}
   - component: {fileID: 1997806782427391128}
   - component: {fileID: 6696268536453735053}
-  - component: {fileID: 5022987734362069286}
   - component: {fileID: 8630639510476118776}
+  - component: {fileID: 3268910367608157015}
+  - component: {fileID: 5022987734362069286}
   m_Layer: 0
   m_Name: Akkum
   m_TagString: Untagged
@@ -2338,6 +2369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5293932082350697808}
+  - {fileID: 7460044585335543596}
   m_Father: {fileID: 4842291446511641527}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2418,6 +2450,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37eaa2a39a21722439239f67e87a0ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8630639510476118776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297241930118432080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f04fc9935853184481f474b4c068e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info:
+    Name: "\u0410\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440"
+    Description: 
+    ActionText: 
+  _effect: {fileID: 144434840, guid: 2b6cbff1c1f54334384e1276e932adf1, type: 3}
+  _effectTransform: {fileID: 7460044585335543596}
+--- !u!95 &3268910367608157015
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297241930118432080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0bdf0db8ea3b044ea0cd68714606eaf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!82 &5022987734362069286
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2428,9 +2497,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cb153305266478342bcdb388eb81c27d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 622206f4f00fcc740b350973d21a1455, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2514,22 +2583,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8630639510476118776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3297241930118432080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f04fc9935853184481f474b4c068e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _info:
-    Name: "\u0410\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440"
-    Description: 
-    ActionText: 
 --- !u!1 &3384000852637060361
 GameObject:
   m_ObjectHideFlags: 0
