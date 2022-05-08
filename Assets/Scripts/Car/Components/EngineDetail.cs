@@ -8,18 +8,20 @@ namespace Cars
     public class EngineDetail : CarComponent
     {
         private Animator _animator;
-
+        private AudioSource _audioSource;
         private Coroutine _coroutine;
 
         public override void Init(ICar car)
         {
             base.Init(car);
+            _audioSource = GetComponent<AudioSource>();
             _animator = GetComponent<Animator>();
         }
 
         protected override void OnClick()
         {
             _animator.Play("Action");
+            _audioSource.Play();
             if(_coroutine == null) _coroutine = StartCoroutine(UpdateLine());
         }
 

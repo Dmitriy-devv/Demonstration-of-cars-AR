@@ -8,13 +8,18 @@ namespace Cars
     {
         [SerializeField] private Lamp _otherLamp;
         [SerializeField] private Light _light;
+        [SerializeField] private AudioClip _onSound;
+        [SerializeField] private AudioClip _offSound;
 
+        private AudioSource _audioSource;
         private bool _state;
 
         public override void Init(ICar car)
         {
             base.Init(car);
             _state = false;
+
+            _audioSource = GetComponent<AudioSource>();
         }
 
         protected override void OnClick()
@@ -27,6 +32,8 @@ namespace Cars
         public void Turn(bool value)
         {
             _light.gameObject.SetActive(value);
+            _audioSource.clip = value ? _onSound : _offSound;
+            _audioSource.Play();
         }
     }
 }
