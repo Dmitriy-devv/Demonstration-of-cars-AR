@@ -15,13 +15,15 @@ namespace Cars
         private ComponentSign _currentSign;
         private ComponentLine _linePrefab;
         protected ComponentLine _currentLine;
+        protected ICar _car;
 
-        public virtual void Init(ComponentSign sign, ComponentLine line)
+        public virtual void Init(ICar car)
         {
-            _signPrefab = sign;
+            _car = car;
+            _signPrefab = _car.ComponentSign;
             _signPosition = GetComponentInChildren<SignPosition>().transform;
 
-            _linePrefab = line;
+            _linePrefab = _car.ComponentLine;
 
             var rb = gameObject.AddComponent<Rigidbody>();
             rb.isKinematic = true;

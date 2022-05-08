@@ -11,15 +11,18 @@ namespace Cars
         [SerializeField] private Transform _openTransform;
         [SerializeField] private Transform _pivot;
         [SerializeField] private float _timeOpen;
+        [SerializeField] private float _force;
 
         private Quaternion _closeRotation;
         private bool _direction = false;
         private Coroutine _doorAnim;
+        private Vector3 _forceDirection;
 
-        public override void Init(ComponentSign sign, ComponentLine line)
+        public override void Init(ICar car)
         {
-            base.Init(sign, line);
+            base.Init(car);
             _closeRotation = _pivot.localRotation;
+            _forceDirection = transform.up;
         }
 
         protected sealed override void OnClick()
@@ -48,6 +51,7 @@ namespace Cars
             }
 
             _pivot.localRotation = to;
+            _car.AddForce(_forceDirection, transform.position, _direction ? -_force : _force);
             _direction = !_direction;
             if (!_direction) SetEngine(false);
             _doorAnim = null;

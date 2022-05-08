@@ -15,9 +15,9 @@ namespace Cars
         private bool _direction = false;
         private float _angle;
 
-        public override void Init(ComponentSign sign, ComponentLine line)
+        public override void Init(ICar car)
         {
-            base.Init(sign, line);
+            base.Init(car);
             _angle = 0f;
 
         }

@@ -205,7 +205,8 @@ MonoBehaviour:
   _engineObj: {fileID: 4842291446511641524}
   _openTransform: {fileID: 6328823611663883600}
   _pivot: {fileID: 7034150061607240717}
-  _timeOpen: 1
+  _timeOpen: 0.3
+  _force: 200
 --- !u!1 &309628016859177373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1103,9 @@ MonoBehaviour:
     ActionText: Click to open/close
   _openTransform: {fileID: 6579761316359578140}
   _pivot: {fileID: 6756143293736761408}
-  _timeOpen: 1
+  _timeOpen: 0.3
+  _force: 200
+  _isInverseForceDirection: 1
 --- !u!1 &2009832339989281079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,7 +1950,9 @@ MonoBehaviour:
     ActionText: Click to open/close
   _openTransform: {fileID: 1785986947426983331}
   _pivot: {fileID: 7832042920504022908}
-  _timeOpen: 1
+  _timeOpen: 0.3
+  _force: 200
+  _isInverseForceDirection: 0
 --- !u!1 &2743394612399380275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,7 +2210,9 @@ MonoBehaviour:
     ActionText: Click to open/close
   _openTransform: {fileID: 5722959437045917838}
   _pivot: {fileID: 1105865574895884714}
-  _timeOpen: 1
+  _timeOpen: 0.3
+  _force: 200
+  _isInverseForceDirection: 1
 --- !u!1 &3249625636147594502
 GameObject:
   m_ObjectHideFlags: 0
@@ -4707,7 +4714,9 @@ MonoBehaviour:
     ActionText: Click to open/close
   _openTransform: {fileID: 7027229454400333930}
   _pivot: {fileID: 5491703281141206017}
-  _timeOpen: 1
+  _timeOpen: 0.3
+  _force: 200
+  _isInverseForceDirection: 0
 --- !u!1 &6105990412210606561
 GameObject:
   m_ObjectHideFlags: 0

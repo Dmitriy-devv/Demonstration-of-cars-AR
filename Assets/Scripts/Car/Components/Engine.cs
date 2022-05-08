@@ -9,9 +9,9 @@ namespace Cars
         private AudioSource _audioSource;
         private bool _state;
 
-        public override void Init(ComponentSign sign, ComponentLine line)
+        public override void Init(ICar car)
         {
-            base.Init(sign, line);
+            base.Init(car);
             _audioSource = GetComponent<AudioSource>();
         }
 
