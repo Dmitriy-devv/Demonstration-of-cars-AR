@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
+using Cars;
 
 [CreateAssetMenu(fileName = "Cars")]
 public class CarsLibrarySO : ScriptableObject
@@ -14,18 +15,18 @@ public class CarsLibrarySO : ScriptableObject
     {
         public string prefabName;
         public string markerName;
-        public Car car;
+        public GameObject carPrefab;
         public CarInfo carInfo;
     }
 
-    public Car GetCar(string marker)
+    public GameObject GetCar(string marker)
     {
         if(!cars.Any(x => x.markerName == marker))
         {
             return null;
         }
 
-        return cars.First(x => x.markerName == marker).car;
+        return cars.First(x => x.markerName == marker).carPrefab;
     }
 
     public CarInfo GetCarInfo(string marker)

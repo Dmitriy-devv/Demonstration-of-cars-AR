@@ -9,9 +9,6 @@ public class InfoPanel : MonoBehaviour
     [SerializeField] private CarInfoPanel   _carInfoPanel;
     [SerializeField] private Button         _openCarInfoButton;
     [SerializeField] private Button         _closeCarInfoButton;
-    [SerializeField] private HornButton     _hornButton;
-    [SerializeField] private EngineToggle   _engineToggle;
-    [SerializeField] private CarSoundManager _carSoundManager;
 
     [SerializeField] private TextMeshProUGUI _carNameText;
 
@@ -24,21 +21,14 @@ public class InfoPanel : MonoBehaviour
        
         _openCarInfoButton.onClick.AddListener(() =>
         {
-            _hornButton.gameObject.SetActive(false);
-            _engineToggle.gameObject.SetActive(false);
             _carInfoPanel.Show();
         });
 
         _closeCarInfoButton.onClick.AddListener(() =>
         {
             _carInfoPanel.Hide();
-            _hornButton.gameObject.SetActive(true);
-            _engineToggle.gameObject.SetActive(true);
         });
 
-        _engineToggle.Init();
-
-        _carSoundManager.Init(_engineToggle, _hornButton);
 
         _isInit = true;
     }
@@ -50,8 +40,6 @@ public class InfoPanel : MonoBehaviour
             Init();
 
         var info = Resources.Load<CarsLibrarySO>("Cars").GetCarInfo("qr1");
-
-        _carSoundManager.SetCarInfo(info);
 
         _carInfoPanel.Hide();
         _carInfoPanel.SetInfo(info);
@@ -65,13 +53,9 @@ public class InfoPanel : MonoBehaviour
         if (!_isInit)
             Init();
 
-        _carSoundManager.SetCarInfo(info);
-
         _carInfoPanel.Hide();
         _carInfoPanel.SetInfo(info);
         _carNameText.text = info.name;
-
-        _engineToggle.ActiveEngine(false);
 
         gameObject.SetActive(true);
     }
@@ -82,7 +66,6 @@ public class InfoPanel : MonoBehaviour
         if (!_isInit)
             Init();
 
-        _engineToggle.ActiveEngine(false);
         _carInfoPanel.Hide();
         gameObject.SetActive(false);
     }

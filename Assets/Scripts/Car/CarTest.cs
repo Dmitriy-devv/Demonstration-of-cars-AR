@@ -15,12 +15,15 @@ namespace Cars
         [SerializeField] private ComponentLine _line;
         [SerializeField] private ComponentSign _sign;
         [SerializeField] private Engine _engine;
-        
+        [SerializeField] private bool _isTest;
+
         private CarAnimator _carAnimator;
         private Rigidbody _rigidbody;
 
         public void Init()
         {
+            if (_isTest) return;
+
             var components = GetComponentsInChildren<CarComponent>(true);
             
             foreach (var component in components)

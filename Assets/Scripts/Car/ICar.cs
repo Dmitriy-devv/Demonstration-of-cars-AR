@@ -10,6 +10,8 @@ namespace Cars
         public ComponentSign ComponentSign { get; }
         public Engine Engine { get; }
 
+        public void Init();
+
         public void AddForce(Vector3 direction, Vector3 position, float force);
         
     }

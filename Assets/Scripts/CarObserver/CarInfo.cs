@@ -10,6 +10,4 @@ public class CarInfo
     public string name;
     public string info;
     public Sprite sprite;
-    public AudioClip engineSound;
-    public AudioClip hornSound;
 }

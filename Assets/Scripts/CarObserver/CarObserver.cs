@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using System.Linq;
 using UnityEngine.XR.ARSubsystems;
+using Cars;
 
 public class CarObserver : MonoBehaviour
 {
@@ -60,7 +61,7 @@ public class CarObserver : MonoBehaviour
         //Spawn Car
         var car = carsLibrary.GetCar(image);
         currentCar = Instantiate(car.gameObject, _trackedObjects[image].GetTransform());
-        currentCar.GetComponent<Car>().Init();
+        currentCar.GetComponent<ICar>().Init();
     }
 
     private void ImageUpdated(string image)
@@ -82,7 +83,7 @@ public class CarObserver : MonoBehaviour
         //Spawn Car
         var car = carsLibrary.GetCar(image);
         currentCar = Instantiate(car.gameObject, _trackedObjects[image].GetTransform());
-        currentCar.GetComponent<Car>().Init();
+        currentCar.GetComponent<ICar>().Init();
     }
 
     private void ImageEmpty()
