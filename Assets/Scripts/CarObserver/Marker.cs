@@ -6,7 +6,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class Marker : MonoBehaviour
 {
-    private void Start()
+    private void Awake()
     {
         
         gameObject.SetActive(false);

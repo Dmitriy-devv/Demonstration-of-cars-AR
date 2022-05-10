@@ -17,11 +17,12 @@ namespace Cars
         [SerializeField] private ParticleSystem _particleSystem;
 
         private float _t;
+        private bool _isInit = false;
 
         public override void Init(ICar car)
         {
             base.Init(car);
-            
+            _isInit = true;
         }
 
         protected override void OnHold()
@@ -35,9 +36,10 @@ namespace Cars
 
         private void Update()
         {
+            if (!_isInit) return;
+
             _wheelCollider.motorTorque = _t * _maxSpeed;
             transform.position = _wheelTransform.position;
-            if (_currentLine != null) _currentLine.UpdateLine();
             _t = Mathf.Clamp(_t - Time.deltaTime * _speed, 0f, 1f);
             
             var em = _particleSystem.emission;

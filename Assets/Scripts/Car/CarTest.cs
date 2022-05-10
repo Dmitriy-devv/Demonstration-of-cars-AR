@@ -20,6 +20,10 @@ namespace Cars
         private CarAnimator _carAnimator;
         private Rigidbody _rigidbody;
 
+        private void Start()
+        {
+            Init();
+        }
         public void Init()
         {
             if (_isTest) return;

@@ -11,6 +11,7 @@ public class ComponentLine : MonoBehaviour
     private ComponentSign _sign;
 
     private LineRenderer _lineRenderer;
+    private bool _isInit;
 
     public void Init(Transform component, ComponentSign sign)
     {
@@ -20,9 +21,17 @@ public class ComponentLine : MonoBehaviour
         _lineRenderer = GetComponent<LineRenderer>();
         _lineRenderer.positionCount = _countPoints;
         UpdateLine();
+        _isInit = true;
     }
 
-    public void UpdateLine()
+    private void Update()
+    {
+        if (!_isInit) return;
+
+        UpdateLine();
+    }
+
+    private void UpdateLine()
     {
         var positions = new Vector3[_countPoints];
         var signPos = _sign.GetLinePosition();

@@ -31,7 +31,6 @@ namespace Cars
 
             while(t < 0.3f)
             {
-                if (_currentLine != null) _currentLine.UpdateLine();
                 t += Time.deltaTime;
                 yield return null;
             }

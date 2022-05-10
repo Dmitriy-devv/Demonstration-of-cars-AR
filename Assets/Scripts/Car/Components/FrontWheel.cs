@@ -38,7 +38,6 @@ namespace Cars
             _angle = value;
             _direction = direction;
             _wheelCollider.steerAngle = _angle;
-            if (_currentLine != null) _currentLine.UpdateLine();
         }
     }
 }
