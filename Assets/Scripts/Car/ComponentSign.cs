@@ -12,7 +12,6 @@ namespace Cars
         public event Action Click;
 
         [SerializeField] private TextMeshProUGUI _nameText;
-        [SerializeField] private TextMeshProUGUI _descriptionText;
         [SerializeField] private TextMeshProUGUI _actionText;
 
         private CarComponent _carComponent;
@@ -26,7 +25,6 @@ namespace Cars
             _carComponent = carComponent;
             var info = _carComponent.Info;
             _nameText.text = info.Name;
-            _descriptionText.text = info.Description;
             _actionText.text = info.ActionText;
         }
 

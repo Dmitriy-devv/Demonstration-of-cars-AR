@@ -201,8 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041A\u0430\u043F\u043E\u0442"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
   _engine: {fileID: 5305287265366384988}
   _openTransform: {fileID: 6328823611663883600}
   _pivot: {fileID: 7034150061607240717}
@@ -466,8 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
   _otherLamp: {fileID: 8236983427915023558}
   _light: {fileID: 1425184754774445739}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
@@ -975,7 +973,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
-    Description: 
     ActionText: 
   _speed: 1
   _maxSpeed: 50
@@ -1185,7 +1182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
-    Description: 
     ActionText: "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439 \u0434\u043B\u044F
       \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F"
   _speedRotate: 30
@@ -1468,9 +1464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _info:
-    Name: "\u0414\u0432\u0435\u0440\u044C"
-    Description: 
-    ActionText: Click to open/close
+    Name: "\u0417\u0430\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
   _openTransform: {fileID: 6579761316359578140}
   _pivot: {fileID: 6756143293736761408}
   _timeOpen: 0.3
@@ -1702,8 +1697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
   _otherLamp: {fileID: 5386098254406790080}
   _light: {fileID: 6030097946415461519}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
@@ -1931,7 +1925,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
-    Description: 
     ActionText: 
   _speed: 1
   _maxSpeed: 50
@@ -2114,8 +2107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
   _otherLamp: {fileID: 3474279558514506894}
   _light: {fileID: 4473941382941138692}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
@@ -2446,8 +2438,7 @@ MonoBehaviour:
     Name: "\u0420\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
       \u0431\u0430\u0447\u043E\u043A \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043E\u0445\u043B\u0430\u0436\u0434\u0435\u043D\u0438\u044F
       \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044F"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438"
 --- !u!82 &6007335016242650980
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2715,9 +2706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _info:
-    Name: "\u0414\u0432\u0435\u0440\u044C"
-    Description: 
-    ActionText: Click to open/close
+    Name: "\u0417\u0430\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
   _openTransform: {fileID: 1785986947426983331}
   _pivot: {fileID: 7832042920504022908}
   _timeOpen: 0.3
@@ -3104,9 +3094,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _info:
-    Name: "\u0414\u0432\u0435\u0440\u044C"
-    Description: 
-    ActionText: Click to open/close
+    Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
   _openTransform: {fileID: 5722959437045917838}
   _pivot: {fileID: 1105865574895884714}
   _timeOpen: 0.3
@@ -3383,8 +3372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0410\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438"
   _effect: {fileID: 144434840, guid: 2b6cbff1c1f54334384e1276e932adf1, type: 3}
   _effectTransform: {fileID: 7460044585335543596}
 --- !u!95 &3268910367608157015
@@ -5232,8 +5220,7 @@ MonoBehaviour:
   _info:
     Name: "\u0411\u0430\u0447\u043E\u043A \u043E\u043C\u044B\u0432\u0430\u0442\u0435\u043B\u044F
       \u0432\u0435\u0442\u0440\u043E\u0432\u043E\u0433\u043E \u0441\u0442\u0435\u043A\u043B\u0430"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438"
 --- !u!82 &8537958213345779915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5883,8 +5870,7 @@ MonoBehaviour:
   _info:
     Name: "\u0411\u0430\u0447\u043E\u043A \u0433\u0438\u0434\u0440\u043E\u043F\u0440\u0438\u0432\u043E\u0434\u0430
       \u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u0441\u0446\u0435\u043F\u043B\u0435\u043D\u0438\u044F"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438"
 --- !u!82 &2180272924255856143
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6203,9 +6189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _info:
-    Name: "\u0414\u0432\u0435\u0440\u044C"
-    Description: 
-    ActionText: Click to open/close
+    Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
   _openTransform: {fileID: 7027229454400333930}
   _pivot: {fileID: 5491703281141206017}
   _timeOpen: 0.3
@@ -6826,6 +6811,7 @@ MonoBehaviour:
   _spawnEffect: {fileID: 3311464277091964083, guid: 741d71915584b474a99be2e9d5d1b77c, type: 3}
   _line: {fileID: 5421528803447300492, guid: 3a8f68f7684ae9c46b9e437a7b46e0ac, type: 3}
   _sign: {fileID: 7799278687793800214, guid: 9b6316bacc73a014fae1c2d154a5b38a, type: 3}
+  _engine: {fileID: 5305287265366384988}
 --- !u!114 &8221368854669230379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6965,7 +6951,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
-    Description: 
     ActionText: "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439 \u0434\u043B\u044F
       \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F"
   _speedRotate: 30
@@ -7224,8 +7209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
   _otherLamp: {fileID: 5514542284006055914}
   _light: {fileID: 8640604503740882250}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
@@ -7915,7 +7899,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0420\u0443\u043B\u044C"
-    Description: 
     ActionText: 
 --- !u!1 &8640832823189849616
 GameObject:
@@ -8135,6 +8118,7 @@ GameObject:
   - component: {fileID: 6348415755933581929}
   - component: {fileID: 5305287265366384988}
   - component: {fileID: 8847595113295429079}
+  - component: {fileID: 5845086041151623051}
   m_Layer: 0
   m_Name: Motor
   m_TagString: Untagged
@@ -8196,10 +8180,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0414\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
-    Description: 
-    ActionText: 
-  _defaultVolume: 1
-  _hoodVolume: 0.3
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
+  _defaultVolume: 0.9
+  _hoodVolume: 0.4
+  _maxAccelerationVolume: 0.8
+  _audioSourceEngine: {fileID: 8847595113295429079}
+  _audioSourceAcceleration: {fileID: 5845086041151623051}
 --- !u!82 &8847595113295429079
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8211,6 +8197,102 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66f79827b8ba1d94191738f16a09d0cd, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &5845086041151623051
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748458503713651589}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 22cd46996da3b624bb08935264560d8c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8723,8 +8805,7 @@ MonoBehaviour:
   _info:
     Name: "\u0411\u0430\u0447\u043E\u043A \u0433\u0438\u0434\u0440\u043E\u043F\u0440\u0438\u0432\u043E\u0434\u0430
       \u0442\u043E\u0440\u043C\u043E\u0437\u043E\u0432"
-    Description: 
-    ActionText: 
+    ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438"
 --- !u!82 &6494179956423887155
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9040,14 +9121,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
---- !u!198 &6545909769748340406 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1138720713468608679, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
-  m_PrefabInstance: {fileID: 6132269042967698961}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6545909769748340405 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1138720713468608676, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
+  m_PrefabInstance: {fileID: 6132269042967698961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6545909769748340406 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1138720713468608679, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
   m_PrefabInstance: {fileID: 6132269042967698961}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8639055797782798312

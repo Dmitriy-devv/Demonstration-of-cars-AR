@@ -73,7 +73,7 @@ namespace Cars
 
         private void SetEngine(bool value)
         {
-            _engine.EngineHood(value);
+            _engine.SetEngineHood(value);
         }
     }
 }

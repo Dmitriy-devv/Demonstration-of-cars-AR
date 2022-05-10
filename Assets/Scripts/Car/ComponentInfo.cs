@@ -9,7 +9,6 @@ namespace Cars
     public struct ComponentInfo
     {
         public string Name;
-        public string Description;
         public string ActionText;
     }
 }

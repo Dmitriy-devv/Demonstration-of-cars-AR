@@ -26,6 +26,8 @@ namespace Cars
 
         protected override void OnHold()
         {
+            if (!_car.Engine.State) return;
+
             _t += Mathf.Clamp(_t + Time.deltaTime * 2f *_speed, 0f, 1f);
             _car.AddForce(_forcePosition.position, _forcePosition.up, _force);
             _otherWheel.UpdateSpeed(_t);
@@ -37,15 +39,16 @@ namespace Cars
             transform.position = _wheelTransform.position;
             if (_currentLine != null) _currentLine.UpdateLine();
             _t = Mathf.Clamp(_t - Time.deltaTime * _speed, 0f, 1f);
+            
             var em = _particleSystem.emission;
-            em.rateOverTime = Mathf.Clamp(_wheelCollider.rpm - 1f, 0f, 500f) / 5f;
+            var rate = Mathf.Clamp(_wheelCollider.rpm - 1f, 0f, 500f) / 5f;
+            em.rateOverTime = rate;
+            _car.Engine.SetEngineAcceleration(rate / 100f);
         }
 
         public void UpdateSpeed(float value)
         {
             _t = value;
         }
-
-
     }
 }

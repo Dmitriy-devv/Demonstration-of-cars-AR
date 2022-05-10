@@ -9,12 +9,13 @@ namespace Cars
     {
         public ComponentLine ComponentLine => _line;
         public ComponentSign ComponentSign => _sign;
-
+        public Engine Engine => _engine;
 
         [SerializeField] private VisualEffect _spawnEffect;
         [SerializeField] private ComponentLine _line;
         [SerializeField] private ComponentSign _sign;
-
+        [SerializeField] private Engine _engine;
+        
         private CarAnimator _carAnimator;
         private Rigidbody _rigidbody;
 
