@@ -37,13 +37,13 @@ namespace Cars
         private void Update()
         {
             if (!_isInit) return;
-
             _wheelCollider.motorTorque = _t * _maxSpeed;
             transform.position = _wheelTransform.position;
             _t = Mathf.Clamp(_t - Time.deltaTime * _speed, 0f, 1f);
             
             var em = _particleSystem.emission;
             var rate = Mathf.Clamp(_wheelCollider.rpm - 1f, 0f, 500f) / 5f;
+            DebugUI.instance.Log(rate.ToString());
             em.rateOverTime = rate;
             _car.Engine.SetEngineAcceleration(rate / 100f);
         }

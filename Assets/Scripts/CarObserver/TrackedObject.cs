@@ -9,10 +9,6 @@ public class TrackedObject : MonoBehaviour
         EventHandler.instance.TrackedObjectSpawned(this);
     }
 
-    private void Update()
-    {
-        DebugUI.instance.Log(transform.position.ToString());
-    }
 
     public Transform GetTransform()
     {

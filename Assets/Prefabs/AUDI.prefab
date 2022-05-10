@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6202831630374474521}
   - component: {fileID: 2833318996032866519}
   - component: {fileID: 8126695968336323395}
+  - component: {fileID: -1375904970822999179}
   m_Layer: 0
   m_Name: AUDI
   m_TagString: Untagged
@@ -113,3 +114,19 @@ MonoBehaviour:
   _sign: {fileID: 0}
   _engine: {fileID: 0}
   _isTest: 1
+--- !u!54 &-1375904970822999179
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807747856631543626}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
