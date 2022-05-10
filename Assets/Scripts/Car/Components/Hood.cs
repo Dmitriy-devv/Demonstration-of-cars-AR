@@ -7,19 +7,26 @@ namespace Cars
     public class Hood : CarComponent
     {
         [Header("Hood")]
-        [SerializeField] private GameObject _engineObj;
+        [SerializeField] private Engine _engine;
         [SerializeField] private Transform _openTransform;
         [SerializeField] private Transform _pivot;
         [SerializeField] private float _timeOpen;
+        [SerializeField] private float _force;
+        [SerializeField] private AudioClip _openSound;
+        [SerializeField] private AudioClip _closeSound;
 
+        private AudioSource _audioSource;
         private Quaternion _closeRotation;
         private bool _direction = false;
         private Coroutine _doorAnim;
+        private Vector3 _forceDirection;
 
-        public override void Init(ComponentSign sign, ComponentLine line)
+        public override void Init(ICar car)
         {
-            base.Init(sign, line);
+            base.Init(car);
             _closeRotation = _pivot.localRotation;
+            _forceDirection = transform.up;
+            _audioSource = GetComponent<AudioSource>();
         }
 
         protected sealed override void OnClick()
@@ -33,6 +40,11 @@ namespace Cars
         private IEnumerator OpenDoor(Quaternion from, Quaternion to)
         {
             if (!_direction) SetEngine(true);
+            if (!_direction)
+            {
+                _audioSource.clip = _openSound;
+                _audioSource.Play();
+            }
             var t = 0f;
 
             while (t < _timeOpen)
@@ -48,6 +60,12 @@ namespace Cars
             }
 
             _pivot.localRotation = to;
+            _car.AddForce(_forceDirection, transform.position, _direction ? -_force : _force);
+            if (_direction)
+            {
+                _audioSource.clip = _closeSound;
+                _audioSource.Play();
+            }
             _direction = !_direction;
             if (!_direction) SetEngine(false);
             _doorAnim = null;
@@ -55,7 +73,7 @@ namespace Cars
 
         private void SetEngine(bool value)
         {
-            _engineObj.SetActive(value);
+            _engine.SetEngineHood(value);
         }
     }
 }

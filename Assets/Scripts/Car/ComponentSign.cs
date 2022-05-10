@@ -12,21 +12,19 @@ namespace Cars
         public event Action Click;
 
         [SerializeField] private TextMeshProUGUI _nameText;
-        [SerializeField] private TextMeshProUGUI _descriptionText;
         [SerializeField] private TextMeshProUGUI _actionText;
 
-        private ICarComponent _carComponent;
+        private CarComponent _carComponent;
         private Transform _lookTarget;
         private Collider _collider;
 
-        public void Init(Transform lookTarget, ICarComponent carComponent)
+        public void Init(Transform lookTarget, CarComponent carComponent)
         {
             _collider = GetComponent<Collider>();
             _lookTarget = lookTarget;
             _carComponent = carComponent;
             var info = _carComponent.Info;
             _nameText.text = info.Name;
-            _descriptionText.text = info.Description;
             _actionText.text = info.ActionText;
         }
 

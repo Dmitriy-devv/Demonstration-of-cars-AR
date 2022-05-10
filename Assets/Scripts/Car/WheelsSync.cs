@@ -9,13 +9,18 @@ namespace Cars
     {
         [SerializeField] private float _brakeTorque = 1000f;
         [SerializeField] private List<WheelSet> _wheels;
+        [SerializeField] private List<WheelCollider> _wheelsBrake;
 
         private void FixedUpdate()
         {
             foreach (var wheel in _wheels)
             {
                 SyncWheel(wheel);
-                wheel.Collider.brakeTorque = _brakeTorque;
+                //wheel.Collider.brakeTorque = _brakeTorque;
+            }
+            foreach (var wheel in _wheelsBrake)
+            {
+                wheel.brakeTorque = _brakeTorque;
             }
         }
 
