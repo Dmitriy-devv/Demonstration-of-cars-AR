@@ -24,13 +24,14 @@ namespace Cars
 
         protected override void OnClick()
         {
-            _state = !_state;
-            Turn(_state);
-            _otherLamp.Turn(_state);
+            var value = !_state;
+            Turn(value);
+            _otherLamp.Turn(value);
         }
 
         public void Turn(bool value)
         {
+            _state = value;
             _light.gameObject.SetActive(value);
             _audioSource.clip = value ? _onSound : _offSound;
             _audioSource.Play();
