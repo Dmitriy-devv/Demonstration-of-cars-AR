@@ -18,6 +18,7 @@ public class CarObserver : MonoBehaviour
     private TrackedObject _trackedObjectTemp;
 
     private ImageObserver _imageObserver;
+    private string _currentImage = string.Empty;
 
     public void Init()
     {
@@ -31,8 +32,26 @@ public class CarObserver : MonoBehaviour
 
         carsLibrary = Resources.Load(carsLibraryPath) as CarsLibrarySO;
 
+        _infoPanel.ResetButton += OnResetButton;
+
         _findPanel.Show();
         _infoPanel.Hide();
+    }
+
+    private void OnResetButton()
+    {
+        _infoPanel.Hide();
+        _findPanel.Show();
+        _currentImage = string.Empty;
+        //Remove Car
+        if (currentCar != null)
+            Destroy(currentCar);
+
+        _imageObserver.ResetCar();
+
+        var transformTracked = _trackedObjects[_currentImage].GetTransform();
+        transformTracked.position = Vector3.zero;
+        transformTracked.rotation = Quaternion.identity;
     }
 
     private void OnTrackedObjectSpawned(TrackedObject obj)
@@ -40,32 +59,37 @@ public class CarObserver : MonoBehaviour
         _trackedObjectTemp = obj;
     }
 
-    [ContextMenu("ImageUpdated")]
-    private void ImageUpdated()
-    {
-        var image = "qr1";
-        if (_trackedObjectTemp != null)
-        {
-            _trackedObjects.Add(image, _trackedObjectTemp);
-            _trackedObjectTemp = null;
-        }
+    //[ContextMenu("ImageUpdated")]
+    //private void ImageUpdated()
+    //{
+    //    var image = "qr1";
+    //    if (_trackedObjectTemp != null)
+    //    {
+    //        _trackedObjects.Add(image, _trackedObjectTemp);
+    //        _trackedObjectTemp = null;
+    //    }
 
-        if (currentCar != null)
-            Destroy(currentCar);
+    //    if (currentCar != null)
+    //        Destroy(currentCar);
 
-        //Update Info Panel
-        var info = carsLibrary.GetCarInfo(image);
-        _findPanel.Hide();
-        _infoPanel.Show(info);
+    //    //Update Info Panel
+    //    var info = carsLibrary.GetCarInfo(image);
+    //    _findPanel.Hide();
+    //    _infoPanel.Show(info);
 
-        //Spawn Car
-        var car = carsLibrary.GetCar(image);
-        currentCar = Instantiate(car.gameObject, _trackedObjects[image].GetTransform());
-        currentCar.GetComponent<ICar>().Init();
-    }
+    //    //Spawn Car
+    //    var car = carsLibrary.GetCar(image);
+    //    currentCar = Instantiate(car.gameObject, _trackedObjects[image].GetTransform());
+    //    currentCar.GetComponent<ICar>().Init();
+    //}
 
     private void ImageUpdated(string image)
     {
+        if(_currentImage == image)
+        {
+            return;
+        }
+
         if(_trackedObjectTemp != null)
         {
             _trackedObjects.Add(image, _trackedObjectTemp);
@@ -75,6 +99,7 @@ public class CarObserver : MonoBehaviour
         if (currentCar != null)
             Destroy(currentCar);
 
+        _currentImage = image;
         //Update Info Panel
         var info = carsLibrary.GetCarInfo(image);
         _findPanel.Hide();
@@ -88,12 +113,14 @@ public class CarObserver : MonoBehaviour
 
     private void ImageEmpty()
     {
+        /*
         _infoPanel.Hide();
         _findPanel.Show();
 
         //Remove Car
         if(currentCar != null)
             Destroy(currentCar);
+        */
     }
 
 }

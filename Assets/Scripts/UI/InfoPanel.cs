@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class InfoPanel : MonoBehaviour
 {
+    public event Action ResetButton;
+
     [SerializeField] private CarInfoPanel   _carInfoPanel;
     [SerializeField] private Button         _openCarInfoButton;
     [SerializeField] private Button         _closeCarInfoButton;
+    [SerializeField] private Button         _resetCarButton;
 
     [SerializeField] private TextMeshProUGUI _carNameText;
 
@@ -29,6 +33,10 @@ public class InfoPanel : MonoBehaviour
             _carInfoPanel.Hide();
         });
 
+        _resetCarButton.onClick.AddListener(() =>
+        {
+            ResetButton?.Invoke();
+        });
 
         _isInit = true;
     }
