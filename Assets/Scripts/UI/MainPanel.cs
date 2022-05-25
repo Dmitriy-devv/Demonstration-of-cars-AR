@@ -31,6 +31,7 @@ public class MainPanel : MonoBehaviour
 
     private void LoadMenu()
     {
+        
         SceneLoader.LoadScene(Scene.Menu);
     }
 }
