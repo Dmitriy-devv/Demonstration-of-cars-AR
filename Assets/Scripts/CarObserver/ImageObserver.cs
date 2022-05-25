@@ -46,8 +46,4 @@ public class ImageObserver : MonoBehaviour
         OnImageUpdated?.Invoke(_currentImage);
     }
     
-    public void ResetCar()
-    {
-        _currentImage = string.Empty;
-    }
 }

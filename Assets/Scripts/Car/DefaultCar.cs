@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Cars
 {
-    public class CarTest : MonoBehaviour, ICar
+    public class DefaultCar : MonoBehaviour, ICar
     {
         public ComponentLine ComponentLine => _line;
         public ComponentSign ComponentSign => _sign;
@@ -15,19 +15,12 @@ namespace Cars
         [SerializeField] private ComponentLine _line;
         [SerializeField] private ComponentSign _sign;
         [SerializeField] private Engine _engine;
-        [SerializeField] private bool _isTest;
 
         private CarAnimator _carAnimator;
         private Rigidbody _rigidbody;
 
-        private void Start()
-        {
-            Init();
-        }
         public void Init()
         {
-            if (_isTest) return;
-
             var components = GetComponentsInChildren<CarComponent>(true);
             
             foreach (var component in components)
@@ -36,19 +29,12 @@ namespace Cars
             }
 
             _rigidbody = GetComponent<Rigidbody>();
-
             _carAnimator = GetComponent<CarAnimator>();
-            _carAnimator.Spawned += OnSpawned;
             _carAnimator.Init();
             _carAnimator.SpawnAnimation();
 
             var effect = Instantiate(_spawnEffect, transform.position, transform.rotation);
             effect.Play();
-        }
-
-        private void OnSpawned()
-        {
-            //Can be interacted
         }
 
         public void AddForce(Vector3 direction, Vector3 position, float force)

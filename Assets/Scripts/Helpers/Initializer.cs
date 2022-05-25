@@ -15,7 +15,6 @@ public class Initializer : MonoBehaviour
     private void Start()
     {
         _eventHandler.Init();
-
         _mainPanel.Show();
         _carObserver.Init();
     }

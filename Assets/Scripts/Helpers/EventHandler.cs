@@ -10,7 +10,6 @@ public class EventHandler : MonoBehaviour
 
     public void Init()
     {
-
         if(instance != null)
         {
             Destroy(this);

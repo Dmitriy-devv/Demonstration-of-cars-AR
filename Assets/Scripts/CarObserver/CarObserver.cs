@@ -42,16 +42,12 @@ public class CarObserver : MonoBehaviour
     {
         _infoPanel.Hide();
         _findPanel.Show();
-        _currentImage = string.Empty;
+
         //Remove Car
         if (currentCar != null)
             Destroy(currentCar);
 
-        _imageObserver.ResetCar();
-
-        var transformTracked = _trackedObjects[_currentImage].GetTransform();
-        transformTracked.position = Vector3.zero;
-        transformTracked.rotation = Quaternion.identity;
+        _currentImage = string.Empty;
     }
 
     private void OnTrackedObjectSpawned(TrackedObject obj)
@@ -59,38 +55,19 @@ public class CarObserver : MonoBehaviour
         _trackedObjectTemp = obj;
     }
 
-    //[ContextMenu("ImageUpdated")]
-    //private void ImageUpdated()
-    //{
-    //    var image = "qr1";
-    //    if (_trackedObjectTemp != null)
-    //    {
-    //        _trackedObjects.Add(image, _trackedObjectTemp);
-    //        _trackedObjectTemp = null;
-    //    }
-
-    //    if (currentCar != null)
-    //        Destroy(currentCar);
-
-    //    //Update Info Panel
-    //    var info = carsLibrary.GetCarInfo(image);
-    //    _findPanel.Hide();
-    //    _infoPanel.Show(info);
-
-    //    //Spawn Car
-    //    var car = carsLibrary.GetCar(image);
-    //    currentCar = Instantiate(car.gameObject, _trackedObjects[image].GetTransform());
-    //    currentCar.GetComponent<ICar>().Init();
-    //}
+    [ContextMenu("Test/LadaImage")]
+    public void TestImage()
+    {
+        ImageUpdated("qr1");
+    }
 
     private void ImageUpdated(string image)
     {
-        if(_currentImage == image)
-        {
-            return;
-        }
+        if (_currentImage == image) return;
 
-        if(_trackedObjectTemp != null)
+        _currentImage = image;
+
+        if (_trackedObjectTemp != null)
         {
             _trackedObjects.Add(image, _trackedObjectTemp);
             _trackedObjectTemp = null;
@@ -99,7 +76,6 @@ public class CarObserver : MonoBehaviour
         if (currentCar != null)
             Destroy(currentCar);
 
-        _currentImage = image;
         //Update Info Panel
         var info = carsLibrary.GetCarInfo(image);
         _findPanel.Hide();
@@ -113,14 +89,7 @@ public class CarObserver : MonoBehaviour
 
     private void ImageEmpty()
     {
-        /*
-        _infoPanel.Hide();
-        _findPanel.Show();
-
-        //Remove Car
-        if(currentCar != null)
-            Destroy(currentCar);
-        */
+        //
     }
 
 }

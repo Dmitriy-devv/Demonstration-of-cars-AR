@@ -9,7 +9,6 @@ public class TrackedObject : MonoBehaviour
         EventHandler.instance.TrackedObjectSpawned(this);
     }
 
-
     public Transform GetTransform()
     {
         return transform;
