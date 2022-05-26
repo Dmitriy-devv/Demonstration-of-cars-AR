@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.ARSubsystems;
+using UnityEngine.XR.ARFoundation;
 
 public class MenuPanel : MonoBehaviour
 {
@@ -10,6 +12,18 @@ public class MenuPanel : MonoBehaviour
 
     private void Awake()
     {
+        var session = FindObjectOfType<ARSession>();
+        if (session != null)
+            Destroy(session);
+
+        var sessionO = FindObjectOfType<ARSessionOrigin>();
+        if (sessionO != null)
+            Destroy(sessionO);
+
+        var imageManager = FindObjectOfType<ARTrackedImageManager>();
+        if (imageManager != null)
+            Destroy(imageManager);
+
         Init();   
     }
 

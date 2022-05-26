@@ -4338,7 +4338,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 0.5
+  m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 3
@@ -4723,7 +4723,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 0.5
+  m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 3
@@ -4880,7 +4880,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 0.5
+  m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 3
@@ -4941,7 +4941,7 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 0.5
+  m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
   m_Mass: 20
   m_WheelDampingRate: 3
@@ -6816,6 +6816,7 @@ MonoBehaviour:
   _line: {fileID: 5421528803447300492, guid: 3a8f68f7684ae9c46b9e437a7b46e0ac, type: 3}
   _sign: {fileID: 7799278687793800214, guid: 9b6316bacc73a014fae1c2d154a5b38a, type: 3}
   _engine: {fileID: 5305287265366384988}
+  _mainMesh: {fileID: 2422652407828447614}
 --- !u!114 &8221368854669230379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7637,6 +7638,7 @@ GameObject:
   - component: {fileID: 951852253877092764}
   - component: {fileID: 4443794218571735724}
   - component: {fileID: 2790553894060853942}
+  - component: {fileID: 2422652407828447614}
   m_Layer: 2
   m_Name: Main
   m_TagString: Untagged
@@ -7733,6 +7735,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.4664016, y: 4.58, z: 15.967393}
   m_Center: {x: 0.029138565, y: 1.25, z: -1.6733279}
+--- !u!114 &2422652407828447614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8299052389553917004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a721b7f1ff703c4ca57f0820973d6bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mainMaterialIndex: 2
 --- !u!1 &8495298357508143667
 GameObject:
   m_ObjectHideFlags: 0
@@ -9141,14 +9156,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
---- !u!4 &6545909769748340405 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1138720713468608676, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
-  m_PrefabInstance: {fileID: 6132269042967698961}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &6545909769748340406 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1138720713468608679, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
+  m_PrefabInstance: {fileID: 6132269042967698961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6545909769748340405 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1138720713468608676, guid: f32c5b154fecbd249927169b3e8a02c2, type: 3}
   m_PrefabInstance: {fileID: 6132269042967698961}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8639055797782798312

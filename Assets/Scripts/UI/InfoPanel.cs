@@ -7,19 +7,18 @@ using System;
 
 public class InfoPanel : MonoBehaviour
 {
-    public event Action ResetButton;
-
-    [SerializeField] private CarInfoPanel   _carInfoPanel;
-    [SerializeField] private Button         _openCarInfoButton;
-    [SerializeField] private Button         _closeCarInfoButton;
-    [SerializeField] private Button         _resetCarButton;
+    
+    [SerializeField] private CarInfoPanel       _carInfoPanel;
+    [SerializeField] private ColorChangePanel   _colorChangePanel;
+    [SerializeField] private Button             _openCarInfoButton;
+    [SerializeField] private Button             _closeCarInfoButton;
+    [SerializeField] private Button             _openColorButton;
+    [SerializeField] private Button             _closeColorButton;
 
     [SerializeField] private TextMeshProUGUI _carNameText;
 
-
     private bool    _isInit = false;
 
-    [ContextMenu("Test/Init")]
     private void Init()
     {
        
@@ -33,27 +32,18 @@ public class InfoPanel : MonoBehaviour
             _carInfoPanel.Hide();
         });
 
-        _resetCarButton.onClick.AddListener(() =>
+        _openColorButton.onClick.AddListener(() =>
         {
-            ResetButton?.Invoke();
+            _colorChangePanel.Show();
         });
 
+        _closeColorButton.onClick.AddListener(() =>
+        {
+            _colorChangePanel.Hide();
+        });
+
+
         _isInit = true;
-    }
-
-    [ContextMenu("Test/Show")]
-    public void Show()
-    {
-        if (!_isInit)
-            Init();
-
-        var info = Resources.Load<CarsLibrarySO>("Cars").GetCarInfo("qr1");
-
-        _carInfoPanel.Hide();
-        _carInfoPanel.SetInfo(info);
-        _carNameText.text = info.name;
-
-        gameObject.SetActive(true);
     }
 
     public void Show(CarInfo info)
@@ -68,7 +58,6 @@ public class InfoPanel : MonoBehaviour
         gameObject.SetActive(true);
     }
 
-    [ContextMenu("Test/Hide")]
     public void Hide()
     {
         if (!_isInit)
@@ -77,6 +66,5 @@ public class InfoPanel : MonoBehaviour
         _carInfoPanel.Hide();
         gameObject.SetActive(false);
     }
-
 
 }

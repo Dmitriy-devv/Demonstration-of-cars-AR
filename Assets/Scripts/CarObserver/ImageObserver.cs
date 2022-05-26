@@ -18,6 +18,7 @@ public class ImageObserver : MonoBehaviour
 
     public void Init()
     {
+        
         _imageManager.trackedImagesChanged += ImageChanged;
     }
 
@@ -32,9 +33,10 @@ public class ImageObserver : MonoBehaviour
             }
                 
             _currentImage = string.Empty;
+            DebugUI.instance.Log("ImageEmpty");
             return;
         }
-
+        
         if (args.updated.Any(image => image.referenceImage.name == _currentImage && image.trackingState == TrackingState.Tracking))
         {
             return;

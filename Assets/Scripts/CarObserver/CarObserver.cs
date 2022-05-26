@@ -4,21 +4,26 @@ using UnityEngine;
 using System;
 using System.Linq;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.XR.ARFoundation;
 using Cars;
 
 public class CarObserver : MonoBehaviour
 {
+    
     [SerializeField] private FindPanel _findPanel;
     [SerializeField] private InfoPanel _infoPanel;
-    [SerializeField] private string carsLibraryPath;
+    [SerializeField] private Material _mainCarMaterial;
 
-    private GameObject currentCar;
-    private CarsLibrarySO carsLibrary;
+    private readonly string _carsLibraryPath = "Cars";
+
+    private GameObject _currentCar;
+    private ICar _currentICar;
+    private CarsLibrarySO _carsLibrary;
     private Dictionary<string, TrackedObject> _trackedObjects;
+    private Dictionary<string, GameObject> _carsSpawned;
     private TrackedObject _trackedObjectTemp;
 
     private ImageObserver _imageObserver;
-    private string _currentImage = string.Empty;
 
     public void Init()
     {
@@ -30,24 +35,10 @@ public class CarObserver : MonoBehaviour
         _trackedObjects = new Dictionary<string, TrackedObject>();
         EventHandler.instance.OnTrackedObjectSpawned += OnTrackedObjectSpawned;
 
-        carsLibrary = Resources.Load(carsLibraryPath) as CarsLibrarySO;
-
-        _infoPanel.ResetButton += OnResetButton;
+        _carsLibrary = Resources.Load(_carsLibraryPath) as CarsLibrarySO;
 
         _findPanel.Show();
         _infoPanel.Hide();
-    }
-
-    private void OnResetButton()
-    {
-        _infoPanel.Hide();
-        _findPanel.Show();
-
-        //Remove Car
-        if (currentCar != null)
-            Destroy(currentCar);
-
-        _currentImage = string.Empty;
     }
 
     private void OnTrackedObjectSpawned(TrackedObject obj)
@@ -63,33 +54,34 @@ public class CarObserver : MonoBehaviour
 
     private void ImageUpdated(string image)
     {
-        if (_currentImage == image) return;
-
-        _currentImage = image;
-
         if (_trackedObjectTemp != null)
         {
             _trackedObjects.Add(image, _trackedObjectTemp);
             _trackedObjectTemp = null;
         }
 
-        if (currentCar != null)
-            Destroy(currentCar);
+        if (_currentCar != null)
+            Destroy(_currentCar);
 
         //Update Info Panel
-        var info = carsLibrary.GetCarInfo(image);
+        var info = _carsLibrary.GetCarInfo(image);
         _findPanel.Hide();
         _infoPanel.Show(info);
 
         //Spawn Car
-        var car = carsLibrary.GetCar(image);
-        currentCar = Instantiate(car.gameObject, _trackedObjects[image].GetTransform());
-        currentCar.GetComponent<ICar>().Init();
+        var car = _carsLibrary.GetCar(image);
+        _currentCar = Instantiate(car.gameObject, _trackedObjects[image].GetTransform());
+        _currentCar.GetComponent<ICar>().Init();
     }
 
     private void ImageEmpty()
     {
-        //
+        if (_currentCar == null)
+            return;
+
+        Destroy(_currentCar);
     }
+
+    
 
 }

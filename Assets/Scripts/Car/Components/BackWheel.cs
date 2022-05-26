@@ -43,7 +43,6 @@ namespace Cars
             
             var em = _particleSystem.emission;
             var rate = Mathf.Clamp(_wheelCollider.rpm - 1f, 0f, 500f) / 5f;
-            DebugUI.instance.Log(rate.ToString());
             em.rateOverTime = rate;
             _car.Engine.SetEngineAcceleration(rate / 100f);
         }
