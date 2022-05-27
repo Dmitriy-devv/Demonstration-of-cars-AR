@@ -44,9 +44,9 @@ namespace Cars
             }
 
             _currentSign = Instantiate(_signPrefab, _signPosition.position, Quaternion.identity, _signPosition.transform);
-            _currentSign.Init(raycaster.transform, this);
             _currentSign.Click += OnClick;
             _currentSign.Hold += OnHold;
+            _currentSign.Init(raycaster.transform, this);
 
             _currentLine = Instantiate(_linePrefab);
             _currentLine.Init(transform, _currentSign);

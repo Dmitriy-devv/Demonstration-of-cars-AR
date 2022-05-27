@@ -11,10 +11,12 @@ namespace Cars
         public ComponentSign ComponentSign => _sign;
         public Engine Engine => _engine;
 
+
         [SerializeField] private VisualEffect _spawnEffect;
         [SerializeField] private ComponentLine _line;
         [SerializeField] private ComponentSign _sign;
         [SerializeField] private Engine _engine;
+        [SerializeField] private float _signScale = 1f;
 
         private CarAnimator _carAnimator;
         private Rigidbody _rigidbody;
@@ -26,6 +28,13 @@ namespace Cars
             foreach (var component in components)
             {
                 component.Init(this);
+            }
+
+            var signPostions = GetComponentsInChildren<SignPosition>(true);
+
+            foreach (var sign in signPostions)
+            {
+                sign.transform.localScale = sign.transform.localScale * _signScale;
             }
 
             _rigidbody = GetComponent<Rigidbody>();
