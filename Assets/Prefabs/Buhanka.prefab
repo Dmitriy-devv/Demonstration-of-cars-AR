@@ -5244,8 +5244,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
+    Description: 
     ActionText: "\u0414\u043B\u044F \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
       \u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
+    _icon: {fileID: 0}
   _speed: 1
   _maxSpeed: 50
   _force: 2
@@ -10537,7 +10539,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0414\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
+    _icon: {fileID: 0}
   _defaultVolume: 0.9
   _hoodVolume: 0.4
   _maxAccelerationVolume: 0.8
@@ -12131,7 +12135,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0420\u0443\u043B\u044C"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0433\u0443\u0434\u043A\u0430"
+    _icon: {fileID: 0}
 --- !u!65 &1578692300253163410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12666,8 +12672,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
+    Description: 
     ActionText: "\u0414\u043B\u044F \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
       \u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
+    _icon: {fileID: 0}
   _speed: 1
   _maxSpeed: 50
   _force: 2
@@ -12877,7 +12885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnEffect: {fileID: 3311464277091964083, guid: 741d71915584b474a99be2e9d5d1b77c, type: 3}
   _line: {fileID: 5421528803447300492, guid: 3a8f68f7684ae9c46b9e437a7b46e0ac, type: 3}
-  _sign: {fileID: 7799278687793800214, guid: 9b6316bacc73a014fae1c2d154a5b38a, type: 3}
+  _sign: {fileID: 5303915874884065855, guid: 9b6316bacc73a014fae1c2d154a5b38a, type: 3}
   _engine: {fileID: 1578692298979853379}
   _signScale: 0.2
 --- !u!1 &1854716057594757931
@@ -13006,7 +13014,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
+    _icon: {fileID: 0}
   _otherLamp: {fileID: 2031437255848819463}
   _light: {fileID: 1578692298958332904}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
@@ -13233,7 +13243,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
+    _icon: {fileID: 0}
   _otherLamp: {fileID: 1854716057594757929}
   _light: {fileID: 1578692299892565096}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
@@ -13437,7 +13449,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
+    _icon: {fileID: 0}
   _openTransform: {fileID: 1578692299440911400}
   _pivot: {fileID: 1578692299593722421}
   _timeOpen: 0.3
@@ -13696,7 +13710,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
+    _icon: {fileID: 0}
   _otherLamp: {fileID: 8087074788907039510}
   _light: {fileID: 1578692298962744320}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
@@ -13901,7 +13917,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0426\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F \u0434\u0432\u0435\u0440\u044C"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
+    _icon: {fileID: 0}
   _openTransform: {fileID: 1578692300198894430}
   _pivot: {fileID: 1578692298667089654}
   _timeOpen: 0.6
@@ -14146,8 +14164,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
+    Description: 
     ActionText: "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439 \u0434\u043B\u044F
       \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F"
+    _icon: {fileID: 0}
   _speedRotate: 30
   _wheelCollider: {fileID: 1578692299398438729}
   _otherWheel: {fileID: 7622329467330406702}
@@ -14267,7 +14287,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
+    _icon: {fileID: 0}
   _openTransform: {fileID: 1578692299549590386}
   _pivot: {fileID: 1578692298763965125}
   _timeOpen: 0.3
@@ -14583,7 +14605,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
+    _icon: {fileID: 0}
   _openTransform: {fileID: 1578692298632373860}
   _pivot: {fileID: 1578692300138172543}
   _timeOpen: 0.3
@@ -14818,7 +14842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u044F\u044F \u0434\u0432\u0435\u0440\u044C"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F"
+    _icon: {fileID: 0}
   _openTransform: {fileID: 1578692300024828601}
   _pivot: {fileID: 1578692300194181773}
   _timeOpen: 0.3
@@ -15075,8 +15101,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
+    Description: 
     ActionText: "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439 \u0434\u043B\u044F
       \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F"
+    _icon: {fileID: 0}
   _speedRotate: 30
   _wheelCollider: {fileID: 1578692300157168459}
   _otherWheel: {fileID: 4557262082176972006}
@@ -15197,7 +15225,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u041F\u0435\u0440\u0435\u0434\u043D\u0438\u0439 \u0441\u0432\u0435\u0442"
+    Description: 
     ActionText: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0434\u043B\u044F \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F"
+    _icon: {fileID: 0}
   _otherLamp: {fileID: 3966742598483083085}
   _light: {fileID: 1578692299916437529}
   _onSound: {fileID: 8300000, guid: 2ee12ac65daca7e48b151c2f79667d31, type: 3}
