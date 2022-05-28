@@ -82,10 +82,11 @@ public class CarObserver : MonoBehaviour
 
     private void ImageEmpty()
     {
-        if (_currentCar == null)
-            return;
+        if (_currentCar != null)
+            Destroy(_currentCar);
 
-        Destroy(_currentCar);
+        _infoPanel.Hide();
+        _findPanel.Show();
     }
 
     

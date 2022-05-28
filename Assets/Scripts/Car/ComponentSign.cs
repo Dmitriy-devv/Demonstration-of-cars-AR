@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using TMPro;
 
@@ -11,7 +12,9 @@ namespace Cars
         public event Action Hold;
         public event Action Click;
 
+        [SerializeField] private Image _iconImage;
         [SerializeField] private TextMeshProUGUI _nameText;
+        [SerializeField] private TextMeshProUGUI _descriptionText;
         [SerializeField] private TextMeshProUGUI _actionText;
 
         private CarComponent _carComponent;
