@@ -29,6 +29,8 @@ namespace Cars
             var info = _carComponent.Info;
             _nameText.text = info.Name;
             _actionText.text = info.ActionText;
+            _iconImage.sprite = info.Icon;
+            _descriptionText.text = info.Description;
         }
 
         private void Update()

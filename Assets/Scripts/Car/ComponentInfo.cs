@@ -10,8 +10,8 @@ namespace Cars
     public struct ComponentInfo
     {
         public string Name;
-        [Multiline] public string Description;
+        [Multiline(6)] public string Description;
         public string ActionText;
-        public Image _icon;
+        public Sprite Icon;
     }
 }
