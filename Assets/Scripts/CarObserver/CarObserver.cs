@@ -46,10 +46,16 @@ public class CarObserver : MonoBehaviour
         _trackedObjectTemp = obj;
     }
 
-    [ContextMenu("Test/LadaImage")]
-    public void TestImage()
+    [ContextMenu("Test/QR1")]
+    public void TestImage1()
     {
         ImageUpdated("qr1");
+    }
+
+    [ContextMenu("Test/QR2")]
+    public void TestImage2()
+    {
+        ImageUpdated("qr2");
     }
 
     private void ImageUpdated(string image)

@@ -15497,7 +15497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
-    ActionText: 
+    ActionText: "\u0414\u043B\u044F \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
+      \u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
   _speed: 1
   _maxSpeed: 50
   _force: 2
@@ -15634,7 +15635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info:
     Name: "\u0417\u0430\u0434\u043D\u0435\u0435 \u043A\u043E\u043B\u0435\u0441\u043E"
-    ActionText: 
+    ActionText: "\u0414\u043B\u044F \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
+      \u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
   _speed: 1
   _maxSpeed: 50
   _force: 2
