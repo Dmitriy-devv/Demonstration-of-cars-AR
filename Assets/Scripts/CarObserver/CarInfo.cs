@@ -8,6 +8,7 @@ using System;
 public class CarInfo 
 {
     public string name;
-    public string info;
+    [Multiline(10)]public string info;
+    public string tagText;
     public Sprite sprite;
 }
