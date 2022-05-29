@@ -52,6 +52,7 @@ public class InfoPanel : MonoBehaviour
             Init();
 
         _carInfoPanel.Hide();
+        _colorChangePanel.Hide();
         _carInfoPanel.SetInfo(info);
         _carNameText.text = info.name;
 
@@ -64,6 +65,7 @@ public class InfoPanel : MonoBehaviour
             Init();
 
         _carInfoPanel.Hide();
+        _colorChangePanel.Hide();
         gameObject.SetActive(false);
     }
 
