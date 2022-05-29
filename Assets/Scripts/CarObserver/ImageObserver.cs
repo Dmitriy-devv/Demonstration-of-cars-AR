@@ -33,7 +33,7 @@ public class ImageObserver : MonoBehaviour
             }
                 
             _currentImage = string.Empty;
-            DebugUI.instance.Log("ImageEmpty");
+            
             return;
         }
         
