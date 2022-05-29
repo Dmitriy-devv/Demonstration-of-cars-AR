@@ -7239,7 +7239,7 @@ MonoBehaviour:
   _line: {fileID: 5421528803447300492, guid: 3a8f68f7684ae9c46b9e437a7b46e0ac, type: 3}
   _sign: {fileID: 5303915874884065855, guid: 9b6316bacc73a014fae1c2d154a5b38a, type: 3}
   _engine: {fileID: 1335826069027977896}
-  _signScale: 1
+  _signScale: 1.1
 --- !u!114 &2414074052745280930
 MonoBehaviour:
   m_ObjectHideFlags: 0
