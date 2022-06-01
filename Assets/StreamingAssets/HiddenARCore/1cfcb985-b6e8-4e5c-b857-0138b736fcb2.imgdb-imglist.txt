@@ -1,2 +1,0 @@
-e9b0494450714de5ba03abe5ef1fb868|G:\UnityProjects\CarObserver_AR\Assets\Images\Markers\LadaFormMarker.png|0.8
-5408656be0b543fa87ce516a4ce7fc11|G:\UnityProjects\CarObserver_AR\Assets\Images\Markers\UAZFormMarker.png|0.8
