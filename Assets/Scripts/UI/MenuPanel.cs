@@ -12,18 +12,6 @@ public class MenuPanel : MonoBehaviour
 
     private void Awake()
     {
-        var session = FindObjectOfType<ARSession>();
-        if (session != null)
-            Destroy(session);
-
-        var sessionO = FindObjectOfType<ARSessionOrigin>();
-        if (sessionO != null)
-            Destroy(sessionO);
-
-        var imageManager = FindObjectOfType<ARTrackedImageManager>();
-        if (imageManager != null)
-            Destroy(imageManager);
-
         Init();   
     }
 
@@ -43,5 +31,4 @@ public class MenuPanel : MonoBehaviour
         Debug.LogWarning("Application quit");
         Application.Quit();
     }
-
 }
